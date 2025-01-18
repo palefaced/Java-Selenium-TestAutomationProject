@@ -1,0 +1,211 @@
+[
+  {
+    "testCaseID": "TC001",
+    "firstName": "",
+    "lastName": "Nikolov",
+    "email": "asd@abv.bg",
+    "genders": [
+      false,
+      true,
+      false
+    ],
+    "phoneNumber": "08999222222",
+    "birthDay": "16",
+    "birthMonth": "November",
+    "birthYear": "2000",
+    "subject": "some text subject",
+    "hobbies": [
+      false,
+      true,
+      false
+    ],
+    "picture": "/Users/niko/Desktop/spider.png",
+    "address": "Naitcho Tsanov 13S",
+    "state": "Haryana",
+    "city": "Karnal"
+  },
+
+
+  {
+    "testCaseID": "TC002",
+    "firstName": "Niko",
+    "lastName": "",
+    "email": "asd@abv.bg",
+    "genders": [
+      false,
+      true,
+      false
+    ],
+    "phoneNumber": "08999222222",
+    "birthDay": "16",
+    "birthMonth": "November",
+    "birthYear": "2000",
+    "subject": "some text subject",
+    "hobbies": [
+      false,
+      true,
+      false
+    ],
+    "picture": "/Users/niko/Desktop/spider.png",
+    "address": "Naitcho Tsanov 13S",
+    "state": "Haryana",
+    "city": "Karnal"
+  },
+
+
+  {
+    "testCaseID": "TC002",
+    "firstName": "Niko",
+    "lastName": "",
+    "email": "asd@abv.bg",
+    "genders": [
+      false,
+      true,
+      false
+    ],
+    "phoneNumber": "08999222222",
+    "birthDay": "16",
+    "birthMonth": "November",
+    "birthYear": "2000",
+    "subject": "some text subject",
+    "hobbies": [
+      false,
+      true,
+      false
+    ],
+    "picture": "/Users/niko/Desktop/spider.png",
+    "address": "Naitcho Tsanov 13S",
+    "state": "Haryana",
+    "city": "Karnal"
+  },
+
+  {
+    "testCaseID": "TC003",
+    "firstName": "Niko",
+    "lastName": "Nikolov",
+    "email": "asd@abv.bg",
+    "genders": [
+      false,
+      true,
+      false
+    ],
+    "phoneNumber": "",
+    "birthDay": "16",
+    "birthMonth": "November",
+    "birthYear": "2000",
+    "subject": "some text subject",
+    "hobbies": [
+      false,
+      true,
+      false
+    ],
+    "picture": "/Users/niko/Desktop/spider.png",
+    "address": "Naitcho Tsanov 13S",
+    "state": "Haryana",
+    "city": "Karnal"
+  },
+
+  {
+    "testCaseID": "TC004",
+    "firstName": "Niko",
+    "lastName": "Nikolov",
+    "email": "asd@abv.bg",
+    "genders": [
+      false,
+      true,
+      false
+    ],
+    "phoneNumber": "asd",
+    "birthDay": "16",
+    "birthMonth": "November",
+    "birthYear": "2000",
+    "subject": "some text subject",
+    "hobbies": [
+      false,
+      true,
+      false
+    ],
+    "picture": "/Users/niko/Desktop/spider.png",
+    "address": "Naitcho Tsanov 13S",
+    "state": "Haryana",
+    "city": "Karnal"
+  },
+
+  {
+    "testCaseID": "TC005",
+    "firstName": "Niko",
+    "lastName": "Nikolov",
+    "email": "asdabv.bg",
+    "genders": [
+      false,
+      true,
+      false
+    ],
+    "phoneNumber": "08999222222",
+    "birthDay": "16",
+    "birthMonth": "November",
+    "birthYear": "2000",
+    "subject": "some text subject",
+    "hobbies": [
+      false,
+      true,
+      false
+    ],
+    "picture": "/Users/niko/Desktop/spider.png",
+    "address": "Naitcho Tsanov 13S",
+    "state": "Haryana",
+    "city": "Karnal"
+  },
+
+  {
+    "testCaseID": "TC006",
+    "firstName": "Niko",
+    "lastName": "Nikolov",
+    "email": "asd@abv.bg",
+    "genders": [
+      false,
+      false,
+      false
+    ],
+    "phoneNumber": "08999222222",
+    "birthDay": "16",
+    "birthMonth": "November",
+    "birthYear": "2000",
+    "subject": "some text subject",
+    "hobbies": [
+      false,
+      true,
+      false
+    ],
+    "picture": "/Users/niko/Desktop/spider.png",
+    "address": "Naitcho Tsanov 13S",
+    "state": "Haryana",
+    "city": "Karnal"
+  },
+
+  {
+    "testCaseID": "TC007",
+    "firstName": "Niko",
+    "lastName": "Nikolov",
+    "email": "asd@abv.bg",
+    "genders": [
+      false,
+      true,
+      false
+    ],
+    "phoneNumber": "08999222222",
+    "birthDay": "16",
+    "birthMonth": "November",
+    "birthYear": "2000",
+    "subject": "some text subject",
+    "hobbies": [
+      false,
+      true,
+      false
+    ],
+    "picture": "/Users/niko/Desktop/spider.png",
+    "address": "Naitcho Tsanov 13S",
+    "state": "Haryana",
+    "city": "Karnal"
+  }
+]

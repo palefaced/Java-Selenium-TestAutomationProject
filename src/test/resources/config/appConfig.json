@@ -1,0 +1,15 @@
+{
+  "environment": {
+    "baseUrl": "https://demoqa.com/",
+    "browser": "chrome",
+    "headless": false
+  },
+  "timeouts": {
+    "implicitWait": 5,
+    "explicitWait": 10,
+    "pageLoadTimeout": 30
+  },
+  "testData": {
+    "testDataPathRegistrationPage": "src/test/resources/config/registrationPageTestData.json"
+  }
+}
