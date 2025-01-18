@@ -13,10 +13,8 @@ public class BasePage {
 
     public BasePage(WebDriver driver) {
         this.driver = driver;
-
-        //Generated based on the ConfigFile - access the timeout values from the nested timeouts objects
-        int wait = ConfigReader.getConfig().getTimeouts().getExplicitWait();
-        this.wait = new WebDriverWait(driver, Duration.ofSeconds(wait));
+        int waitTime = ConfigReader.getConfig().getTimeouts().getExplicitWait();
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(waitTime));
     }
     public WebDriver Driver(){
         return this.driver;
@@ -26,7 +24,4 @@ public class BasePage {
     public <T> T WaitFor(ExpectedCondition<T> condition) {
         return this.wait.until(condition);
     }
-
-    //Wait-a, можем и да го добавим генерално в Base клас-a, като просто го подадем на конструктора !
-    // така ще го има на всяка стъпка !
 }
