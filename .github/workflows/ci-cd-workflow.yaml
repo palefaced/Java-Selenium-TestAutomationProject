@@ -30,4 +30,4 @@ jobs:
           sudo apt-get install -y chromedriver
 
       - name: Run tests
-        run: ./mvnw clean test
+        run: mvn clean test
