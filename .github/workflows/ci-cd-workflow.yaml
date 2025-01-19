@@ -3,26 +3,35 @@ name: Run Automation Tests
 on:
   push:
     branches:
-      - main  # Specify the branch you want to trigger the workflow on. Adjust if needed.
+      - main
 
 jobs:
   build-and-test:
-    runs-on: ubuntu-latest  # Use an Ubuntu virtual machine.
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v3  # Pulls the latest code from your repository.
+        uses: actions/checkout@v3
 
       - name: Set up Java
         uses: actions/setup-java@v3
         with:
-          distribution: 'temurin'  # Use Eclipse Temurin distribution.
-          java-version: '21'       # Specify your Java version (e.g., 8, 11, 17).
+          distribution: 'temurin'
+          java-version: '17'
 
       - name: Set up Maven
+        run: mvn --version  # Check if Maven is already installed
+
+      - name: Install Dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y maven
+          sudo apt-get install -y chromium-driver  # Install ChromeDriver for Selenium
 
       - name: Run Tests
         run: mvn clean test
+
+      - name: Archive Test Results
+        uses: actions/upload-artifact@v3
+        with:
+          name: test-results
+          path: target/surefire-reports/
