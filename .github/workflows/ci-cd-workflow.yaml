@@ -3,33 +3,26 @@ name: Run Automation Tests
 on:
   push:
     branches:
-      - main  # Trigger tests when changes are pushed to the main branch
-  pull_request:
-    branches:
-      - main  # Trigger tests on pull requests to main
-  schedule:
-    - cron: '0 0 * * *'  # Runs daily at midnight (optional)
+      - main  # Specify the branch you want to trigger the workflow on. Adjust if needed.
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
+  build-and-test:
+    runs-on: ubuntu-latest  # Use an Ubuntu virtual machine.
+
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+      - name: Checkout Code
+        uses: actions/checkout@v3  # Pulls the latest code from your repository.
 
       - name: Set up Java
         uses: actions/setup-java@v3
         with:
-          distribution: 'temurin'
-          java-version: '11'
+          distribution: 'temurin'  # Use Eclipse Temurin distribution.
+          java-version: '21'       # Specify your Java version (e.g., 8, 11, 17).
 
-      - name: Install Chrome
+      - name: Set up Maven
         run: |
           sudo apt-get update
-          sudo apt-get install -y google-chrome-stable
+          sudo apt-get install -y maven
 
-      - name: Set up ChromeDriver
-        uses: actions/setup-chromedriver@v2
-
-      - name: Run tests
-        run: ./mvnw clean test
+      - name: Run Tests
+        run: mvn clean test
