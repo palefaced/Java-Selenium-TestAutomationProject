@@ -11,23 +11,23 @@ on:
     - cron: '0 0 * * *'  # Runs daily at midnight (optional)
 
 jobs:
-  build-and-test:
-    runs-on: ubuntu-latest  # Use a Linux virtual machine
-
+  build:
+    runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v3
 
       - name: Set up Java
         uses: actions/setup-java@v3
         with:
-          java-version: '11'  # Specify your Java version
+          distribution: 'temurin'
+          java-version: '11'
 
-      - name: Install ChromeDriver
-        uses: crazy-max/ghaction-chromedriver@v1
-        with:
-          chrome-version: 'latest'
-
-      - name: Run Tests
+      - name: Install Chrome and ChromeDriver
         run: |
-          ./mvnw clean test
+          sudo apt-get update
+          sudo apt-get install -y google-chrome-stable
+          sudo apt-get install -y chromedriver
+
+      - name: Run tests
+        run: ./mvnw clean test
