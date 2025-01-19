@@ -23,11 +23,11 @@ jobs:
         with:
           java-version: '11'  # Specify your Java version
 
-      - name: Set up ChromeDriver
-        uses: electronuserland/action-chromedriver@v1
+      - name: Install ChromeDriver
+        uses: crazy-max/ghaction-chromedriver@v1
         with:
           chrome-version: 'latest'
 
       - name: Run Tests
         run: |
-          ./mvnw clean test  # Use Maven wrapper to build and run tests
+          ./mvnw clean test
