@@ -22,11 +22,6 @@ jobs:
       - name: Set up Maven
         run: mvn --version  # Check if Maven is already installed
 
-      - name: Install Dependencies
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y chromium-driver  # Install ChromeDriver for Selenium
-
       - name: Run Tests
         run: mvn clean test
 
