@@ -15,7 +15,7 @@ public class BaseTest {
         String browser = ConfigReader.getConfig().getEnvironment().getBrowser();
 
         if (browser.toLowerCase().equals("chrome")){
-            System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/src/test/resources/chromedriver");
+           // System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/src/test/resources/chromedriver");
             this.driver = new ChromeDriver();
 
             //Needed if tests are started from testing.xml
