@@ -54,7 +54,7 @@ public class RegistrationPage extends BasePage {
         scrollToTheBottomOfTheForm();
         removeFramesFromPage();
         selectFromMultipleOptions(elements().hobbies(), user.getHobbies());
-        elements().picButton().sendKeys(user.getPicture());
+       // elements().picButton().sendKeys(user.getPicture());
         populateField(elements().currentAddressField(), user.getAddress());
 
         selectSpecificState(user.getState());
