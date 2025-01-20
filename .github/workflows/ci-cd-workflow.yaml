@@ -19,14 +19,5 @@ jobs:
           distribution: 'temurin'
           java-version: '21'
 
-      - name: Set up Maven
-        run: mvn --version  # Check if Maven is already installed
-
       - name: Run Tests
         run: mvn clean test
-
-      - name: Archive Test Results
-        uses: actions/upload-artifact@v3
-        with:
-          name: test-results
-          path: target/surefire-reports/
