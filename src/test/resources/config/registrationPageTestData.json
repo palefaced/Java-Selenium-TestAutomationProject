@@ -19,7 +19,7 @@
       true,
       false
     ],
-    "picture": "/src/test/resources/upload/scooby-doo.png",
+    "picture": "/src/test/resources/upload/scooby-doo.jpg",
     "address": "Naitcho Tsanov 13S",
     "state": "Haryana",
     "city": "Karnal"
@@ -46,7 +46,7 @@
       true,
       false
     ],
-    "picture": "/src/test/resources/upload/scooby-doo.png",
+    "picture": "/src/test/resources/upload/scooby-doo.jpg",
     "address": "Naitcho Tsanov 13S",
     "state": "Haryana",
     "city": "Karnal"
@@ -73,7 +73,7 @@
       true,
       false
     ],
-    "picture": "/src/test/resources/upload/scooby-doo.png",
+    "picture": "/src/test/resources/upload/scooby-doo.jpg",
     "address": "Naitcho Tsanov 13S",
     "state": "Haryana",
     "city": "Karnal"
@@ -99,7 +99,7 @@
       true,
       false
     ],
-    "picture": "/src/test/resources/upload/scooby-doo.png",
+    "picture": "/src/test/resources/upload/scooby-doo.jpg",
     "address": "Naitcho Tsanov 13S",
     "state": "Haryana",
     "city": "Karnal"
@@ -125,7 +125,7 @@
       true,
       false
     ],
-    "picture": "/src/test/resources/upload/scooby-doo.png",
+    "picture": "/src/test/resources/upload/scooby-doo.jpg",
     "address": "Naitcho Tsanov 13S",
     "state": "Haryana",
     "city": "Karnal"
@@ -151,7 +151,7 @@
       true,
       false
     ],
-    "picture": "/src/test/resources/upload/scooby-doo.png",
+    "picture": "/src/test/resources/upload/scooby-doo.jpg",
     "address": "Naitcho Tsanov 13S",
     "state": "Haryana",
     "city": "Karnal"
@@ -177,7 +177,7 @@
       true,
       false
     ],
-    "picture": "/src/test/resources/upload/scooby-doo.png",
+    "picture": "/src/test/resources/upload/scooby-doo.jpg",
     "address": "Naitcho Tsanov 13S",
     "state": "Haryana",
     "city": "Karnal"
@@ -203,7 +203,7 @@
       true,
       false
     ],
-    "picture": "/src/test/resources/upload/scooby-doo.png",
+    "picture": "/src/test/resources/upload/scooby-doo.jpg",
     "address": "Naitcho Tsanov 13S",
     "state": "Haryana",
     "city": "Karnal"
