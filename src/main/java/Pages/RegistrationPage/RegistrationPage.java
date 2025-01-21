@@ -56,9 +56,9 @@ public class RegistrationPage extends BasePage {
         removeFramesFromPage();
         selectFromMultipleOptions(elements().hobbies(), user.getHobbies());
 
-        elements().picButton().sendKeys(user.getPicture());
-//        String absolutePath = setAbsolutePathForImage(user.getPicture());
-//        elements().picButton().sendKeys(absolutePath);
+        //elements().picButton().sendKeys(user.getPicture());
+        String absolutePath = setAbsolutePathForImage(user.getPicture());
+        elements().picButton().sendKeys(absolutePath);
 
         populateField(elements().currentAddressField(), user.getAddress());
         selectSpecificState(user.getState());
@@ -119,11 +119,11 @@ public class RegistrationPage extends BasePage {
         }
     }
 
-//    public String setAbsolutePathForImage(String relativePath) {
-//        File file = new File(relativePath);
-//        if (!file.exists()) {
-//            throw new RuntimeException("File not found: " + relativePath);
-//        }
-//        return file.getAbsolutePath();
-//    }
+    public String setAbsolutePathForImage(String relativePath) {
+        File file = new File(relativePath);
+        if (!file.exists()) {
+            throw new RuntimeException("File not found: " + relativePath);
+        }
+        return file.getAbsolutePath();
+    }
 }
