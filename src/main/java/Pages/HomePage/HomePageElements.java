@@ -15,6 +15,6 @@ public class HomePageElements extends BasePage {
     }
 
     public  WebElement JoinNowButton(){
-        return Driver().findElement(By.xpath("SomeNONExistingXpath"));
+        return Driver().findElement(By.xpath("//*[@id=\"app\"]/div/div/div[1]/a/img"));
     }
 }
