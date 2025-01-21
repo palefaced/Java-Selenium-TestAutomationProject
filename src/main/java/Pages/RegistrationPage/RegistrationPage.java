@@ -9,6 +9,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
+import java.io.File;
 import java.util.List;
 
 public class RegistrationPage extends BasePage {
@@ -54,9 +55,12 @@ public class RegistrationPage extends BasePage {
         scrollToTheBottomOfTheForm();
         removeFramesFromPage();
         selectFromMultipleOptions(elements().hobbies(), user.getHobbies());
-       // elements().picButton().sendKeys(user.getPicture());
-        populateField(elements().currentAddressField(), user.getAddress());
 
+        elements().picButton().sendKeys(user.getPicture());
+//        String absolutePath = setAbsolutePathForImage(user.getPicture());
+//        elements().picButton().sendKeys(absolutePath);
+
+        populateField(elements().currentAddressField(), user.getAddress());
         selectSpecificState(user.getState());
         selectSpecificCity(user.getCity());
         clickOnElement(elements().submitButton());
@@ -93,7 +97,9 @@ public class RegistrationPage extends BasePage {
 
     public void scrollTheElementInToVIew(WebElement element) {
         JS_Scripts.scrollElementInToView(Driver(), element);
-    };
+    }
+
+    ;
 
     public void selectSpecificState(String state) {
         elements().stateDD().click();
@@ -112,4 +118,12 @@ public class RegistrationPage extends BasePage {
             }
         }
     }
+
+//    public String setAbsolutePathForImage(String relativePath) {
+//        File file = new File(relativePath);
+//        if (!file.exists()) {
+//            throw new RuntimeException("File not found: " + relativePath);
+//        }
+//        return file.getAbsolutePath();
+//    }
 }
