@@ -24,3 +24,10 @@ jobs:
 
       - name: Run Tests
         run: mvn clean test
+
+      - name: Upload TestNG Reports
+        if: success()  # Ensure this only runs if the tests are successful
+        uses: actions/upload-artifact@v3
+        with:
+                name: testng-reports
+                path: target/test-output/  # Path where the reports are generated

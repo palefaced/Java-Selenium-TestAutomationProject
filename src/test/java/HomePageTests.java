@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 public class HomePageTests extends BaseTest {
 
     @Test
-    public void verifyHomePageIsLoadedByCheckingTheHeader() {
+    public void VerifyHomePageIsLoadedByCheckingTheHeader() {
         HomePage hp = new HomePage(this.driver);
         hp.navigateTo();
         hp.assertions().assertIfHeaderIsAvailable();
