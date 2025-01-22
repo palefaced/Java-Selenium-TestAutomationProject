@@ -54,12 +54,17 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.0.0</version>
                 <configuration>
+                    <!-- Path to your TestNG suite -->
                     <suiteXmlFiles>
                         <suiteXmlFile>src/test/resources/config/testing.xml</suiteXmlFile>
                     </suiteXmlFiles>
+
+                    <!-- Output directory for TestNG results -->
+                    <reportsDirectory>${project.build.directory}/test-output</reportsDirectory>
                 </configuration>
             </plugin>
         </plugins>
     </build>
+
 
 </project>

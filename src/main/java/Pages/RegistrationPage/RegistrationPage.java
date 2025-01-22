@@ -57,8 +57,8 @@ public class RegistrationPage extends BasePage {
         selectFromMultipleOptions(elements().hobbies(), user.getHobbies());
 
         //elements().picButton().sendKeys(user.getPicture());
-        String absolutePath = setAbsolutePathForImage(user.getPicture());
-        elements().picButton().sendKeys(absolutePath);
+        //Ако ползваме CI (Jenkins/GHA) ни трябва абсолютен път до файл от нашата машина, а не локален
+        elements().picButton().sendKeys(setAbsolutePathForImage(user.getPicture()));
 
         populateField(elements().currentAddressField(), user.getAddress());
         selectSpecificState(user.getState());
@@ -122,7 +122,7 @@ public class RegistrationPage extends BasePage {
     public String setAbsolutePathForImage(String relativePath) {
         File file = new File(relativePath);
         if (!file.exists()) {
-            throw new RuntimeException("File not found: " + relativePath);
+            throw new RuntimeException(Constants_Registration_Page.FILE_NOT_FOUND_ERROR_MSG + relativePath);
         }
         return file.getAbsolutePath();
     }
