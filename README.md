@@ -30,7 +30,7 @@ Future Enhancements
 Plans for the future - Logger: To capture logs for debugging and improving visibility into test execution.
 Notifications: Email alerts for failed tests or detected bugs.
 
-Key Accomplishments
+Key Accomplishments:
 Successfully integrated GitHub Actions and Jenkins for CI/CD.
 Switched to using JSON files for test data management.
 Implemented HTML reporting for better visibility and professional-grade test result representation.
