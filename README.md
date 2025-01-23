@@ -27,8 +27,9 @@ Test Cases
 Focused on functional testing and ensuring comprehensive coverage of key scenarios.
 Future Enhancements
 
-Logger: To capture logs for debugging and improving visibility into test execution.
+Plans for the future - Logger: To capture logs for debugging and improving visibility into test execution.
 Notifications: Email alerts for failed tests or detected bugs.
+
 Key Accomplishments
 Successfully integrated GitHub Actions and Jenkins for CI/CD.
 Switched to using JSON files for test data management.
