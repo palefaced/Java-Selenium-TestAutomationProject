@@ -1,11 +1,12 @@
 Project Structure Overview
+
 Automation Framework
 
 Tools:
 Selenium: For UI automation.
 TestNG: For test management.
 Design Pattern: Custom Page Object Model (POM).
-No use of Maps—standard structure for element and page management.
+
 Test Data Management
 
 Source: JSON files used as the data source for test cases.
