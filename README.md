@@ -3,14 +3,21 @@ Project Structure Overview
 Automation Framework
 
 Tools:
+
 Selenium: For UI automation.
+
 TestNG: For test management.
+
 Design Pattern: Custom Page Object Model (POM).
-No use of Maps—standard structure for element and page management.
+
+
 Test Data Management
 
 Source: JSON files are used as the data source for test cases.
+
 Purpose: Enables dynamic test execution by fetching inputs from structured JSON data.
+
+
 Build and Dependency Management
 
 Maven: Used for managing dependencies, project builds, and running test suites.
