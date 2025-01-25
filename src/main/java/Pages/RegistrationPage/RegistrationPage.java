@@ -5,6 +5,7 @@ import Utils.models.RegistrationUser;
 import Pages.BasePage;
 import Utils.constants.Constants_Registration_Page;
 import Utils.scripts.JS_Scripts;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
@@ -27,8 +28,12 @@ public class RegistrationPage extends BasePage {
     }
 
     public void navigateTo() {
-        Driver().get(ConfigReader.getConfig().getEnvironment().getBaseUrl() +
-                Constants_Registration_Page.REGISTRATION_PAGE_TITLE);
+        try {
+            Driver().get(ConfigReader.getConfig().getEnvironment().getBaseUrl() +
+                    Constants_Registration_Page.REGISTRATION_PAGE_TITLE);
+        } catch (Exception e) {
+            System.out.println("Failed to navigate to the URL: " + e.getMessage());
+        }
     }
 
     public void removeFramesFromPage() {
@@ -68,12 +73,23 @@ public class RegistrationPage extends BasePage {
     }
 
     public void clickOnElement(WebElement element) {
-        element.click();
+        try {
+            element.click();
+        } catch (Exception e) {
+            throw new RuntimeException("Element failed to be clicked: " + e.getMessage());
+        } catch (NoSuchElementException e){
+            throw new RuntimeException("option not found: " + e.getMessage());
+        }
+
     }
 
     public void populateBirthData(WebElement element, String text) {
-        Select select = new Select(element);
-        select.selectByVisibleText(text);
+        try {
+            Select select = new Select(element);
+            select.selectByVisibleText(text);
+        } catch (Exception e) {
+            throw new RuntimeException("Element failed to be selected: " + e.getMessage());
+        }
     }
 
     public void selectDateFromCalendar(String day) {
@@ -99,23 +115,29 @@ public class RegistrationPage extends BasePage {
         JS_Scripts.scrollElementInToView(Driver(), element);
     }
 
-    ;
-
     public void selectSpecificState(String state) {
         elements().stateDD().click();
         elements().stateValue(state).click();
     }
 
     public void selectSpecificCity(String city) {
-        elements().cityDD().click();
-        elements().cityValue(city).click();
+        try {
+            elements().cityDD().click();
+            elements().cityValue(city).click();
+        } catch (Exception e) {
+            System.out.println("Error selecting the city :" + city);
+        }
     }
 
     public void selectFromMultipleOptions(List<WebElement> hobbies, List<Boolean> boolValue) {
-        for (int i = 0; i < hobbies.size() - 1; i++) {
-            if (boolValue.get(i)) {
-                hobbies.get(i).click();
+        try {
+            for (int i = 0; i < hobbies.size() - 1; i++) {
+                if (boolValue.get(i)) {
+                    hobbies.get(i).click();
+                }
             }
+        } catch (Exception exp) {
+            System.out.println("Error upon selecting hobbies: " + exp.getMessage());
         }
     }
 

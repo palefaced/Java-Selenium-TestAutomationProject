@@ -21,12 +21,20 @@ public class JS_Scripts {
     }
 
     public static void scrollToBottom(WebDriver driver) {
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("window.scrollTo(0, document.body.scrollHeight);");
+        try {
+            JavascriptExecutor js = (JavascriptExecutor) driver;
+            js.executeScript("window.scrollTo(0, document.body.scrollHeight);");
+        } catch (Exception e){
+            throw new RuntimeException("Failed to scroll to the bottom of the page: " + e.getMessage());
+        }
     }
 
     public static void scrollElementInToView(WebDriver driver, WebElement element){
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("arguments[0].scrollIntoView(true);", element);
+        try {
+            JavascriptExecutor js = (JavascriptExecutor) driver;
+            js.executeScript("arguments[0].scrollIntoView(true);", element);
+        } catch (Exception e){
+            throw new RuntimeException("Failed to scroll element into view: " + e.getMessage());
+        }
     }
 }

@@ -13,6 +13,7 @@ public class BaseTest {
 
     @BeforeClass
     public void setUp(){
+
         String browser = ConfigReader.getConfig().getEnvironment().getBrowser();
 
         if (browser.toLowerCase().equals("chrome")){
@@ -24,13 +25,11 @@ public class BaseTest {
 
             this.driver = new ChromeDriver(options);
 
-            //Needed if tests are started from testing.xml
-            //Utils.removeAllFrames(driver);
         } else if (browser.toLowerCase().equals("firefox")) {
             WebDriverManager.firefoxdriver().setup();
             this.driver = new FirefoxDriver();
         } else {
-            throw new IllegalArgumentException("Unsupported brer" + browser);
+            throw new IllegalArgumentException("Unsupported browser" + browser);
         }
         driver.manage().window().maximize();
     }
@@ -41,11 +40,4 @@ public class BaseTest {
             this.driver.quit();
         }
     }
-
-//    Best Practices
-//    Use @BeforeClass and @AfterClass for browser setup and teardown if you want to run all tests in a class in a single browser instance.
-//    Use @BeforeMethod and @AfterMethod if each test method needs its own browser instance.
-//    Centralize the WebDriver initialization logic in a base class or a utility class to follow the DRY (Don't Repeat Yourself) principle.
-//    Use WebDriverManager (e.g., from the io.github.bonigarcia library) to simplify browser driver management instead of setting system properties manually.
-
 }

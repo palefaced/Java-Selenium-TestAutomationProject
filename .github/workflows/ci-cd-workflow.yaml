@@ -27,7 +27,7 @@ jobs:
 
       - name: Upload TestNG Reports
         if: success()  # Ensure this only runs if the tests are successful
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
                 name: testng-reports
                 path: target/test-output/  # Path where the reports are generated

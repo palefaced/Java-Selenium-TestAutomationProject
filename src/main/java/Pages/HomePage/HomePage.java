@@ -19,6 +19,10 @@ public class HomePage extends BasePage {
     }
 
     public void navigateTo() {
-        Driver().get(ConfigReader.getConfig().getEnvironment().getBaseUrl());
+        try {
+            Driver().get(ConfigReader.getConfig().getEnvironment().getBaseUrl());
+        } catch (Exception e){
+            throw new RuntimeException("Failed to navigate to the URL: " + e.getMessage());
+        }
     }
 }
