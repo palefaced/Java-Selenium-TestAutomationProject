@@ -15,7 +15,7 @@ public class HomePageElements extends BasePage {
         try {
             return Driver().findElement(By.xpath("//*[@id=\"app\"]/header/a/img"));
         } catch (NoSuchElementException e){
-            throw new RuntimeException("Element not found" + e.getMessage());
+            throw new RuntimeException("Element not found: " + e.getMessage());
         }
     }
 
@@ -23,7 +23,7 @@ public class HomePageElements extends BasePage {
         try {
             return Driver().findElement(By.xpath("//*[@id=\"app\"]/div/div/div[1]/a/img"));
         }   catch (NoSuchElementException e){
-            throw new RuntimeException("Element not found" + e.getMessage());
+            throw new RuntimeException("Element not found: " + e.getMessage());
         }
     }
 }

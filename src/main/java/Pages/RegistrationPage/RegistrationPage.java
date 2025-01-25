@@ -40,6 +40,14 @@ public class RegistrationPage extends BasePage {
         JS_Scripts.removeAllFrames(Driver());
     }
 
+    public void scrollToTheBottomOfTheForm() {
+        JS_Scripts.scrollToBottom(Driver());
+    }
+
+    public void scrollTheElementInToVIew(WebElement element) {
+        JS_Scripts.scrollElementInToView(Driver(), element);
+    }
+
     public void fillRegistrationForm(RegistrationUser user) {
         removeFramesFromPage();
 
@@ -75,12 +83,11 @@ public class RegistrationPage extends BasePage {
     public void clickOnElement(WebElement element) {
         try {
             element.click();
+        } catch (NoSuchElementException e) {
+            throw new RuntimeException("option not found: " + e.getMessage());
         } catch (Exception e) {
             throw new RuntimeException("Element failed to be clicked: " + e.getMessage());
-        } catch (NoSuchElementException e){
-            throw new RuntimeException("option not found: " + e.getMessage());
         }
-
     }
 
     public void populateBirthData(WebElement element, String text) {
@@ -93,31 +100,36 @@ public class RegistrationPage extends BasePage {
     }
 
     public void selectDateFromCalendar(String day) {
-        List<WebElement> days = elements().dayCells();
-        for (WebElement dayCell : days) {
-            if (dayCell.getText().equals(day)) {
-                dayCell.click();
-                break;
+        try {
+            List<WebElement> days = elements().dayCells();
+            for (WebElement dayCell : days) {
+                if (dayCell.getText().equals(day)) {
+                    dayCell.click();
+                    break;
+                }
             }
+        } catch (Exception e) {
+            throw new RuntimeException("Element failed to be selected: " + e.getMessage());
         }
     }
 
     public void populateField(WebElement element, String text) {
-        element.clear();
-        element.sendKeys(text);
-    }
+        try {
+            element.clear();
+            element.sendKeys(text);
+        } catch (Exception e) {
+            throw new RuntimeException("Element failed to be populated" + e.getMessage());
+        }
 
-    public void scrollToTheBottomOfTheForm() {
-        JS_Scripts.scrollToBottom(Driver());
-    }
-
-    public void scrollTheElementInToVIew(WebElement element) {
-        JS_Scripts.scrollElementInToView(Driver(), element);
     }
 
     public void selectSpecificState(String state) {
-        elements().stateDD().click();
-        elements().stateValue(state).click();
+        try {
+            elements().stateDD().click();
+            elements().stateValue(state).click();
+        } catch (Exception e) {
+            throw new RuntimeException("Element failed to be selected: " + e.getMessage());
+        }
     }
 
     public void selectSpecificCity(String city) {
@@ -125,7 +137,7 @@ public class RegistrationPage extends BasePage {
             elements().cityDD().click();
             elements().cityValue(city).click();
         } catch (Exception e) {
-            System.out.println("Error selecting the city :" + city);
+            System.out.println("Element failed to be selected: " + city);
         }
     }
 
@@ -137,15 +149,16 @@ public class RegistrationPage extends BasePage {
                 }
             }
         } catch (Exception exp) {
-            System.out.println("Error upon selecting hobbies: " + exp.getMessage());
+            System.out.println("Element failed to be selected: " + exp.getMessage());
         }
     }
 
     public String setAbsolutePathForImage(String relativePath) {
-        File file = new File(relativePath);
-        if (!file.exists()) {
+        try {
+            File file = new File(relativePath);
+            return file.getAbsolutePath();
+        } catch (Exception e) {
             throw new RuntimeException(Constants_Registration_Page.FILE_NOT_FOUND_ERROR_MSG + relativePath);
         }
-        return file.getAbsolutePath();
     }
 }

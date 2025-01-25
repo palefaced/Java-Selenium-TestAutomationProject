@@ -1,10 +1,13 @@
 package Pages.RegistrationPage;
 
 import Pages.BasePage;
+import org.apache.hc.client5.http.HttpRoute;
+import org.bouncycastle.crypto.agreement.ECDHCUnifiedAgreement;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Wait;
 
 import java.util.List;
 
@@ -15,92 +18,182 @@ public class RegistrationPageElements extends BasePage {
     }
 
     public WebElement firstName() {
-        return Driver().findElement(By.xpath("//*[@id=\"firstName\"]"));
+        try {
+            return Driver().findElement(By.xpath("//*[@id=\"firstName\"]"));
+        } catch (Exception e) {
+            throw new RuntimeException("Element not found: " + e.getMessage());
+        }
     }
 
     public WebElement lastName() {
-        return Driver().findElement(By.xpath("//*[@id=\"lastName\"]"));
+        try {
+            return Driver().findElement(By.xpath("//*[@id=\"lastName\"]"));
+
+        } catch (Exception e) {
+            throw new RuntimeException("Element not found: " + e.getMessage());
+        }
     }
 
     public WebElement eMail() {
-        return Driver().findElement(By.xpath("//*[@id=\"userEmail\"]"));
+        try {
+            return Driver().findElement(By.xpath("//*[@id=\"userEmail\"]"));
+        } catch (Exception e) {
+            throw new RuntimeException("Element not found: " + e.getMessage());
+        }
     }
 
     //вземам ги като лист с общ къстъм Xpath, след това в основната страница въртя цикъл и си избирам кой да маркирам
     public List<WebElement> genders() {
-        return Driver().findElements(By.xpath("//label[contains(@for, 'gender-radio-')]"));
+        try {
+            return Driver().findElements(By.xpath("//label[contains(@for, 'gender-radio-')]"));
+
+        } catch (Exception e) {
+            throw new RuntimeException("Element not found: " + e.getMessage());
+        }
     }
 
     public WebElement mobilePhone() {
-        return Driver().findElement(By.xpath("//*[@id=\"userNumber\"]"));
+        try {
+            return Driver().findElement(By.xpath("//*[@id=\"userNumber\"]"));
+
+        } catch (Exception e) {
+            throw new RuntimeException("Element not found: " + e.getMessage());
+        }
     }
 
     public WebElement calendarButton() {
-        return WaitFor(ExpectedConditions.elementToBeClickable(By.id("dateOfBirthInput")));
+        try {
+            return WaitFor(ExpectedConditions.elementToBeClickable(By.id("dateOfBirthInput")));
+        } catch (Exception e) {
+            throw new RuntimeException("Element not found: " + e.getMessage());
+        }
     }
 
     public WebElement monthDD() {
-        return WaitFor(ExpectedConditions.elementToBeClickable(By.xpath("//select[contains(@class, 'react-datepicker__month-select')]")));
+        try {
+            return WaitFor(ExpectedConditions.elementToBeClickable(By.xpath("//select[contains(@class, 'react-datepicker__month-select')]")));
+
+        } catch (Exception e) {
+            throw new RuntimeException("Element not found: " + e.getMessage());
+        }
     }
 
     public WebElement yearDD() {
-        return WaitFor(ExpectedConditions.elementToBeClickable(By.xpath("//select[contains(@class, 'react-datepicker__year-select')]")));
+        try {
+            return WaitFor(ExpectedConditions.elementToBeClickable(By.xpath("//select[contains(@class, 'react-datepicker__year-select')]")));
+        } catch (Exception e) {
+            throw new RuntimeException("Element not found: " + e.getMessage());
+        }
     }
 
     public List<WebElement> dayCells() {
-        return WaitFor(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//div[contains(@class, 'react-datepicker__day')]")));
+        try {
+            return WaitFor(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//div[contains(@class, 'react-datepicker__day')]")));
+
+        } catch (Exception e) {
+            throw new RuntimeException("Element not found: " + e.getMessage());
+        }
     }
 
     public WebElement subjectField() {
-        return WaitFor(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='subjectsInput']")));
+        try {
+            return WaitFor(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='subjectsInput']")));
+        } catch (Exception e) {
+            throw new RuntimeException("Element not found: " + e.getMessage());
+        }
     }
 
     public List<WebElement> hobbies() {
-        return WaitFor(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//label[contains(@for, 'hobbies-checkbox-')]")));
+        try {
+            return WaitFor(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//label[contains(@for, 'hobbies-checkbox-')]")));
+        } catch (Exception e) {
+            throw new RuntimeException("Element not found: " + e.getMessage());
+        }
     }
 
     public WebElement picButton() {
-        return WaitFor(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"uploadPicture\"]")));
+        try {
+            return WaitFor(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"uploadPicture\"]")));
+        } catch (Exception e) {
+            throw new RuntimeException("Element not found: " + e.getMessage());
+        }
     }
 
     public WebElement currentAddressField() {
-        return WaitFor(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='subjectsInput']")));
+        try {
+            return WaitFor(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='subjectsInput']")));
+        } catch (Exception e) {
+            throw new RuntimeException("Element not found: " + e.getMessage());
+        }
     }
 
     public WebElement stateDD() {
-        return WaitFor(ExpectedConditions.elementToBeClickable(By.id("state")));
+        try {
+            return WaitFor(ExpectedConditions.elementToBeClickable(By.id("state")));
+        } catch (Exception e) {
+            throw new RuntimeException("Element not found: " + e.getMessage());
+        }
     }
 
     public WebElement stateValue(String state) {
-        return WaitFor(ExpectedConditions.elementToBeClickable(By.xpath(String.format("//div[contains(text(),'%s')]", state))));
+        try {
+            return WaitFor(ExpectedConditions.elementToBeClickable(By.xpath(String.format("//div[contains(text(),'%s')]", state))));
+        } catch (Exception e) {
+            throw new RuntimeException("Element not found: " + e.getMessage());
+        }
     }
 
     public WebElement cityDD() {
-        return WaitFor(ExpectedConditions.elementToBeClickable(By.id("city")));
+        try {
+            return WaitFor(ExpectedConditions.elementToBeClickable(By.id("city")));
+        } catch (Exception e) {
+            throw new RuntimeException("Element not found: " + e.getMessage());
+        }
     }
 
     public WebElement cityValue(String city) {
-        return WaitFor(ExpectedConditions.elementToBeClickable(By.xpath(String.format("//div[contains(text(),'%s')]", city))));
+        try {
+            return WaitFor(ExpectedConditions.elementToBeClickable(By.xpath(String.format("//div[contains(text(),'%s')]", city))));
+        } catch (Exception e) {
+            throw new RuntimeException("Element not found: " + e.getMessage());
+        }
     }
 
     public WebElement submitButton() {
-        return this.Driver().findElement(By.xpath("//*[@id=\"submit\"]"));
+        try {
+            return this.Driver().findElement(By.xpath("//*[@id=\"submit\"]"));
+        } catch (Exception e) {
+            throw new RuntimeException("Element not found: " + e.getMessage());
+        }
     }
 
-    public String getFieldBackGroundImage(WebElement element){
-        return element.getCssValue("background-image");
+    public String getFieldBackGroundImage(WebElement element) {
+        try {
+            return element.getCssValue("background-image");
+        } catch (Exception e) {
+            throw new RuntimeException("Element not found: " + e.getMessage());
+        }
     }
 
-    public WebElement femaleGender(){
-        return Driver().findElement(By.xpath("//*[@id=\"genterWrapper\"]/div[2]/div[2]/label"));
+    public WebElement femaleGender() {
+        try {
+            return Driver().findElement(By.xpath("//*[@id=\"genterWrapper\"]/div[2]/div[2]/label"));
+        } catch (Exception e) {
+            throw new RuntimeException("Element not found: " + e.getMessage());
+        }
     }
 
-    public String getElementColor(WebElement element){
+    public String getElementColor(WebElement element) {
+
         return element.getCssValue("color");
     }
 
-    public String successfullySubmittingFormMessage(){
-        WebElement element = WaitFor(ExpectedConditions.visibilityOfElementLocated((By.id("example-modal-sizes-title-lg"))));
-        return element.getText();
+    public String successfullySubmittingFormMessage() {
+        try {
+            WebElement element = WaitFor(ExpectedConditions.visibilityOfElementLocated((By.id("example-modal-sizes-title-lg"))));
+            return element.getText();
+        } catch (Exception e) {
+            throw new RuntimeException("Element not found: " + e.getMessage());
+        }
     }
 }
