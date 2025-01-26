@@ -1,6 +1,7 @@
 package Pages.HomePage;
 
 import Pages.BasePage;
+import Utils.helpers.WebDriverHelper;
 import Utils.readers.ConfigReader;
 import org.openqa.selenium.WebDriver;
 
@@ -19,10 +20,6 @@ public class HomePage extends BasePage {
     }
 
     public void navigateTo() {
-        try {
-            Driver().get(ConfigReader.getConfig().getEnvironment().getBaseUrl());
-        } catch (Exception e){
-            throw new RuntimeException("Failed to navigate to the URL: " + e.getMessage());
-        }
+        WebDriverHelper.tryToNavigateToURL(Driver(), ConfigReader.getConfig().getEnvironment().getBaseUrl());
     }
 }

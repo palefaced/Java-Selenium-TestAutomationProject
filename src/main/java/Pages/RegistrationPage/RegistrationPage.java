@@ -1,11 +1,11 @@
 package Pages.RegistrationPage;
 
+import Utils.helpers.WebDriverHelper;
 import Utils.readers.ConfigReader;
 import Utils.models.RegistrationUser;
 import Pages.BasePage;
 import Utils.constants.Constants_Registration_Page;
 import Utils.scripts.JS_Scripts;
-import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
@@ -28,12 +28,8 @@ public class RegistrationPage extends BasePage {
     }
 
     public void navigateTo() {
-        try {
-            Driver().get(ConfigReader.getConfig().getEnvironment().getBaseUrl() +
-                    Constants_Registration_Page.REGISTRATION_PAGE_TITLE);
-        } catch (Exception e) {
-            System.out.println("Failed to navigate to the URL: " + e.getMessage());
-        }
+        WebDriverHelper.tryToNavigateToURL(Driver(), ConfigReader.getConfig().getEnvironment().getBaseUrl() +
+                Constants_Registration_Page.REGISTRATION_PAGE_TITLE);
     }
 
     public void removeFramesFromPage() {
@@ -81,13 +77,7 @@ public class RegistrationPage extends BasePage {
     }
 
     public void clickOnElement(WebElement element) {
-        try {
-            element.click();
-        } catch (NoSuchElementException e) {
-            throw new RuntimeException("option not found: " + e.getMessage());
-        } catch (Exception e) {
-            throw new RuntimeException("Element failed to be clicked: " + e.getMessage());
-        }
+        WebDriverHelper.tryToClickOnElement(element);
     }
 
     public void populateBirthData(WebElement element, String text) {
