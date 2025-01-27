@@ -17,13 +17,16 @@ public class BaseTest {
         String browser = ConfigReader.getConfig().getEnvironment().getBrowser();
 
         if (browser.toLowerCase().equals("chrome")){
-            ChromeOptions options = new ChromeOptions();
-            options.addArguments("--headless");
-            options.addArguments("--disable-gpu");  // Disable GPU hardware acceleration
-            options.addArguments("--no-sandbox");   // Ensure it runs in CI
-            options.addArguments("--remote-debugging-port=9222");  // Required to avoid "DevToolsActivePort" error
+//            Required to run test execution in GITHUB Actions
 
-            this.driver = new ChromeDriver(options);
+//            ChromeOptions options = new ChromeOptions();
+//            options.addArguments("--headless");
+//            options.addArguments("--disable-gpu");  // Disable GPU hardware acceleration
+//            options.addArguments("--no-sandbox");   // Ensure it runs in CI
+//            options.addArguments("--remote-debugging-port=9222");  // Required to avoid "DevToolsActivePort" error
+//
+//            this.driver = new ChromeDriver(options);
+            this.driver = new ChromeDriver();
 
         } else if (browser.toLowerCase().equals("firefox")) {
             WebDriverManager.firefoxdriver().setup();

@@ -121,7 +121,7 @@ public class RegistrationPageElements extends BasePage {
 
     public WebElement currentAddressField() {
         try {
-            return WaitFor(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='subjectsInput']")));
+            return WaitFor(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"currentAddress\"]")));
         } catch (Exception e) {
             throw new RuntimeException("Element not found: " + e.getMessage());
         }

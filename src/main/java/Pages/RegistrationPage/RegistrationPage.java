@@ -8,9 +8,7 @@ import Utils.constants.Constants_Registration_Page;
 import Utils.scripts.JS_Scripts;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.Select;
 
-import java.io.File;
 import java.util.List;
 
 public class RegistrationPage extends BasePage {
@@ -44,7 +42,7 @@ public class RegistrationPage extends BasePage {
         JS_Scripts.scrollElementInToView(Driver(), element);
     }
 
-    public void fillRegistrationForm(RegistrationUser user) {
+    public void fillRegistrationForm(RegistrationUser user) throws InterruptedException {
         removeFramesFromPage();
 
         populateField(elements().firstName(), user.getFirstName());
@@ -67,11 +65,12 @@ public class RegistrationPage extends BasePage {
 
         //elements().picButton().sendKeys(user.getPicture());
         //Ако ползваме CI (Jenkins/GHA) ни трябва абсолютен път до файл от нашата машина, а не локален
-        elements().picButton().sendKeys(setAbsolutePathForImage(user.getPicture()));
+        elements().picButton().sendKeys(setAbsolutePath(user.getPicture()));
+        Thread.sleep(3000);
 
         populateField(elements().currentAddressField(), user.getAddress());
         selectSpecificState(user.getState());
-        selectSpecificCity(user.getCity());
+        SelectSpecificCity(user.getCity());
         clickOnElement(elements().submitButton());
         Driver().switchTo().activeElement();
     }
@@ -80,75 +79,33 @@ public class RegistrationPage extends BasePage {
         WebDriverHelper.tryToClickOnElement(element);
     }
 
+    public void populateField(WebElement element, String text) {
+        WebDriverHelper.trySendKeys(element, text);
+    }
+
     public void populateBirthData(WebElement element, String text) {
-        try {
-            Select select = new Select(element);
-            select.selectByVisibleText(text);
-        } catch (Exception e) {
-            throw new RuntimeException("Element failed to be selected: " + e.getMessage());
-        }
+        WebDriverHelper.trySelectElement(element, text);
     }
 
     public void selectDateFromCalendar(String day) {
-        try {
-            List<WebElement> days = elements().dayCells();
-            for (WebElement dayCell : days) {
-                if (dayCell.getText().equals(day)) {
-                    dayCell.click();
-                    break;
-                }
-            }
-        } catch (Exception e) {
-            throw new RuntimeException("Element failed to be selected: " + e.getMessage());
-        }
-    }
-
-    public void populateField(WebElement element, String text) {
-        try {
-            element.clear();
-            element.sendKeys(text);
-        } catch (Exception e) {
-            throw new RuntimeException("Element failed to be populated" + e.getMessage());
-        }
-
+        WebDriverHelper.selectDateFromCalendarWidget(elements().dayCells(), day);
     }
 
     public void selectSpecificState(String state) {
-        try {
-            elements().stateDD().click();
-            elements().stateValue(state).click();
-        } catch (Exception e) {
-            throw new RuntimeException("Element failed to be selected: " + e.getMessage());
-        }
+        WebDriverHelper.tryToClickOnElement(elements().stateDD());
+        WebDriverHelper.tryToClickOnElement(elements().stateValue(state));
     }
 
-    public void selectSpecificCity(String city) {
-        try {
-            elements().cityDD().click();
-            elements().cityValue(city).click();
-        } catch (Exception e) {
-            System.out.println("Element failed to be selected: " + city);
-        }
+    public void SelectSpecificCity(String city) {
+        WebDriverHelper.tryToClickOnElement(elements().cityDD());
+        WebDriverHelper.tryToClickOnElement(elements().cityValue(city));
     }
 
     public void selectFromMultipleOptions(List<WebElement> hobbies, List<Boolean> boolValue) {
-        try {
-            for (int i = 0; i < hobbies.size() - 1; i++) {
-                if (boolValue.get(i)) {
-                    hobbies.get(i).click();
-                }
-            }
-        } catch (Exception exp) {
-            System.out.println("Element failed to be selected: " + exp.getMessage());
-        }
+        WebDriverHelper.selectFromMultipleOptions(hobbies, boolValue);
     }
 
-    public String setAbsolutePathForImage(String relativePath) {
-        try {
-            File file = new File(relativePath);
-            return file.getAbsolutePath();
-        } catch (Exception e) {
-            throw new RuntimeException(Constants_Registration_Page.FILE_NOT_FOUND_ERROR_MSG + relativePath);
-        }
+    public String setAbsolutePath(String relativePath) {
+        return WebDriverHelper.trySetAbsolutePathForFile(relativePath);
     }
 }
