@@ -1,10 +1,11 @@
 package Utils.helpers;
 
-import Utils.constants.Constants_Registration_Page;
+import Pages.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 
 import java.io.File;
@@ -23,6 +24,14 @@ public class WebDriverHelper {
     public static WebElement tryFindElement(WebDriver driver, By locator) {
         try {
             return driver.findElement(locator);
+        } catch (NoSuchElementException e) {
+            throw new RuntimeException("Element not found: " + e.getMessage());
+        }
+    }
+
+    public static List<WebElement> tryFindElements(WebDriver driver, By locator) {
+        try {
+            return driver.findElements(locator);
         } catch (NoSuchElementException e) {
             throw new RuntimeException("Element not found: " + e.getMessage());
         }
@@ -58,7 +67,7 @@ public class WebDriverHelper {
         }
     }
 
-    public static void selectDateFromCalendarWidget(List<WebElement> elementList, String day) {
+    public static void trySelectDateFromCalendarWidget(List<WebElement> elementList, String day) {
         try {
             List<WebElement> days = elementList;
             for (WebElement dayCell : days) {
@@ -72,15 +81,15 @@ public class WebDriverHelper {
         }
     }
 
-    public static void selectFromMultipleOptions(List<WebElement> elemetsList, List<Boolean> booleanList){
+    public static void trySelectFromMultipleOptions(List<WebElement> elemetsList, List<Boolean> booleanList){
         try {
             for (int i = 0; i < elemetsList.size() - 1; i++) {
                 if (booleanList.get(i)) {
                     elemetsList.get(i).click();
                 }
             }
-        } catch (Exception exp) {
-            throw new RuntimeException("Element failed to be selected: " + exp.getMessage());
+        } catch (Exception e) {
+            throw new RuntimeException("Element failed to be selected: " + e.getMessage());
         }
     }
 
@@ -90,6 +99,22 @@ public class WebDriverHelper {
             return file.getAbsolutePath();
         } catch (Exception e) {
             throw new RuntimeException("File not found: " + path);
+        }
+    }
+
+    public static WebElement tryWaitForElementToBeClickable(WebDriver driver, By locator){
+        try {
+            return ((BasePage) driver).WaitFor(ExpectedConditions.elementToBeClickable(locator));
+        } catch (Exception e) {
+            throw new RuntimeException("Element failed to be clicked: " + e.getMessage());
+        }
+    }
+
+    public static WebElement tryWaitForElementToBeVisible(WebDriver driver, By locator){
+        try {
+            return ((BasePage) driver).WaitFor(ExpectedConditions.visibilityOfElementLocated(locator));
+        } catch (Exception e){
+            throw new RuntimeException("Element failed to be located: " + e.getMessage());
         }
     }
 }

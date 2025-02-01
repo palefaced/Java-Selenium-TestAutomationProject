@@ -1,6 +1,7 @@
 package Pages.RegistrationPage;
 
 import Pages.BasePage;
+import Utils.helpers.WebDriverHelper;
 import org.apache.hc.client5.http.HttpRoute;
 import org.bouncycastle.crypto.agreement.ECDHCUnifiedAgreement;
 import org.openqa.selenium.By;
@@ -18,78 +19,41 @@ public class RegistrationPageElements extends BasePage {
     }
 
     public WebElement firstName() {
-        try {
-            return Driver().findElement(By.xpath("//*[@id=\"firstName\"]"));
-        } catch (Exception e) {
-            throw new RuntimeException("Element not found: " + e.getMessage());
-        }
+        return WebDriverHelper.tryFindElement(Driver(), By.xpath("//*[@id=\"firstName\"]"));
     }
 
     public WebElement lastName() {
-        try {
-            return Driver().findElement(By.xpath("//*[@id=\"lastName\"]"));
-
-        } catch (Exception e) {
-            throw new RuntimeException("Element not found: " + e.getMessage());
-        }
+        return WebDriverHelper.tryFindElement(Driver(), By.xpath("//*[@id=\"lastName\"]"));
     }
 
     public WebElement eMail() {
-        try {
-            return Driver().findElement(By.xpath("//*[@id=\"userEmail\"]"));
-        } catch (Exception e) {
-            throw new RuntimeException("Element not found: " + e.getMessage());
-        }
+        return WebDriverHelper.tryFindElement(Driver(), By.xpath("//*[@id=\"userEmail\"]"));
     }
 
     //вземам ги като лист с общ къстъм Xpath, след това в основната страница въртя цикъл и си избирам кой да маркирам
     public List<WebElement> genders() {
-        try {
-            return Driver().findElements(By.xpath("//label[contains(@for, 'gender-radio-')]"));
-
-        } catch (Exception e) {
-            throw new RuntimeException("Element not found: " + e.getMessage());
-        }
+        return WebDriverHelper.tryFindElements(Driver(), By.xpath("//label[contains(@for, 'gender-radio-')]"));
     }
 
     public WebElement mobilePhone() {
-        try {
-            return Driver().findElement(By.xpath("//*[@id=\"userNumber\"]"));
-
-        } catch (Exception e) {
-            throw new RuntimeException("Element not found: " + e.getMessage());
-        }
+        return WebDriverHelper.tryFindElement(Driver(), By.xpath("//*[@id=\"userNumber\"]"));
     }
 
     public WebElement calendarButton() {
-        try {
-            return WaitFor(ExpectedConditions.elementToBeClickable(By.id("dateOfBirthInput")));
-        } catch (Exception e) {
-            throw new RuntimeException("Element not found: " + e.getMessage());
-        }
+        return WebDriverHelper.tryWaitForElementToBeClickable(Driver(), By.id("dateOfBirthInput"));
     }
 
     public WebElement monthDD() {
-        try {
-            return WaitFor(ExpectedConditions.elementToBeClickable(By.xpath("//select[contains(@class, 'react-datepicker__month-select')]")));
-
-        } catch (Exception e) {
-            throw new RuntimeException("Element not found: " + e.getMessage());
-        }
+        return WebDriverHelper.tryWaitForElementToBeClickable(Driver(), By.xpath("//select[contains(@class, 'react-datepicker__month-select')]"));
     }
 
     public WebElement yearDD() {
-        try {
-            return WaitFor(ExpectedConditions.elementToBeClickable(By.xpath("//select[contains(@class, 'react-datepicker__year-select')]")));
-        } catch (Exception e) {
-            throw new RuntimeException("Element not found: " + e.getMessage());
-        }
+        return WebDriverHelper.tryWaitForElementToBeClickable(Driver(), By.xpath("//select[contains(@class, 'react-datepicker__year-select')]"));
     }
 
     public List<WebElement> dayCells() {
         try {
             return WaitFor(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//div[contains(@class, 'react-datepicker__day')]")));
-
         } catch (Exception e) {
             throw new RuntimeException("Element not found: " + e.getMessage());
         }
@@ -152,19 +116,11 @@ public class RegistrationPageElements extends BasePage {
     }
 
     public WebElement cityValue(String city) {
-        try {
-            return WaitFor(ExpectedConditions.elementToBeClickable(By.xpath(String.format("//div[contains(text(),'%s')]", city))));
-        } catch (Exception e) {
-            throw new RuntimeException("Element not found: " + e.getMessage());
-        }
+        return WebDriverHelper.tryWaitForElementToBeClickable(Driver(), By.xpath(String.format("//div[contains(text(),'%s')]", city)));
     }
 
     public WebElement submitButton() {
-        try {
-            return this.Driver().findElement(By.xpath("//*[@id=\"submit\"]"));
-        } catch (Exception e) {
-            throw new RuntimeException("Element not found: " + e.getMessage());
-        }
+        return WebDriverHelper.tryFindElement(Driver(), By.xpath("//*[@id=\"submit\"]"));
     }
 
     public String getFieldBackGroundImage(WebElement element) {
@@ -176,15 +132,10 @@ public class RegistrationPageElements extends BasePage {
     }
 
     public WebElement femaleGender() {
-        try {
-            return Driver().findElement(By.xpath("//*[@id=\"genterWrapper\"]/div[2]/div[2]/label"));
-        } catch (Exception e) {
-            throw new RuntimeException("Element not found: " + e.getMessage());
-        }
+        return WebDriverHelper.tryFindElement(Driver(), By.xpath("//*[@id=\"genterWrapper\"]/div[2]/div[2]/label"));
     }
 
     public String getElementColor(WebElement element) {
-
         return element.getCssValue("color");
     }
 

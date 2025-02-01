@@ -66,7 +66,6 @@ public class RegistrationPage extends BasePage {
         //elements().picButton().sendKeys(user.getPicture());
         //Ако ползваме CI (Jenkins/GHA) ни трябва абсолютен път до файл от нашата машина, а не локален
         elements().picButton().sendKeys(setAbsolutePath(user.getPicture()));
-        Thread.sleep(3000);
 
         populateField(elements().currentAddressField(), user.getAddress());
         selectSpecificState(user.getState());
@@ -88,7 +87,7 @@ public class RegistrationPage extends BasePage {
     }
 
     public void selectDateFromCalendar(String day) {
-        WebDriverHelper.selectDateFromCalendarWidget(elements().dayCells(), day);
+        WebDriverHelper.trySelectDateFromCalendarWidget(elements().dayCells(), day);
     }
 
     public void selectSpecificState(String state) {
@@ -102,7 +101,7 @@ public class RegistrationPage extends BasePage {
     }
 
     public void selectFromMultipleOptions(List<WebElement> hobbies, List<Boolean> boolValue) {
-        WebDriverHelper.selectFromMultipleOptions(hobbies, boolValue);
+        WebDriverHelper.trySelectFromMultipleOptions(hobbies, boolValue);
     }
 
     public String setAbsolutePath(String relativePath) {
