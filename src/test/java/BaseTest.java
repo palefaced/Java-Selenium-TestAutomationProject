@@ -12,11 +12,11 @@ public class BaseTest {
     protected WebDriver driver;
 
     @BeforeClass
-    public void setUp(){
+    public void setUp() {
 
         String browser = ConfigReader.getConfig().getEnvironment().getBrowser();
 
-        if (browser.toLowerCase().equals("chrome")){
+        if (browser.toLowerCase().equals("chrome")) {
 //            Required to run test execution in GITHUB Actions
 
             ChromeOptions options = new ChromeOptions();
@@ -26,7 +26,7 @@ public class BaseTest {
             options.addArguments("--remote-debugging-port=9222");  // Required to avoid "DevToolsActivePort" error
 
             this.driver = new ChromeDriver(options);
-            this.driver = new ChromeDriver();
+            // this.driver = new ChromeDriver();
 
         } else if (browser.toLowerCase().equals("firefox")) {
             WebDriverManager.firefoxdriver().setup();
@@ -38,7 +38,7 @@ public class BaseTest {
     }
 
     @AfterClass
-    public void tearDown(){
+    public void tearDown() {
         if (this.driver != null) {
             this.driver.quit();
         }
