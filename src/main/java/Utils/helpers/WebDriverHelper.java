@@ -11,7 +11,11 @@ import org.openqa.selenium.support.ui.Select;
 import java.io.File;
 import java.util.List;
 
-public class WebDriverHelper {
+public class WebDriverHelper extends BasePage {
+
+    public WebDriverHelper(WebDriver driver) {
+        super(driver);
+    }
 
     public static void tryToNavigateToURL(WebDriver driver, String url) {
         try {
@@ -81,7 +85,7 @@ public class WebDriverHelper {
         }
     }
 
-    public static void trySelectFromMultipleOptions(List<WebElement> elemetsList, List<Boolean> booleanList){
+    public static void trySelectFromMultipleOptions(List<WebElement> elemetsList, List<Boolean> booleanList) {
         try {
             for (int i = 0; i < elemetsList.size() - 1; i++) {
                 if (booleanList.get(i)) {
@@ -93,7 +97,7 @@ public class WebDriverHelper {
         }
     }
 
-    public static String trySetAbsolutePathForFile(String path){
+    public static String trySetAbsolutePathForFile(String path) {
         try {
             File file = new File(path);
             return file.getAbsolutePath();
@@ -102,18 +106,18 @@ public class WebDriverHelper {
         }
     }
 
-    public static WebElement tryWaitForElementToBeClickable(WebDriver driver, By locator){
+    public static WebElement tryWaitForElementToBeClickable(WebDriver driver, By locator) {
         try {
-            return ((BasePage) driver).WaitFor(ExpectedConditions.elementToBeClickable(locator));
+            return new WebDriverHelper(driver).WaitFor(ExpectedConditions.elementToBeClickable(locator));
         } catch (Exception e) {
             throw new RuntimeException("Element failed to be clicked: " + e.getMessage());
         }
     }
 
-    public static WebElement tryWaitForElementToBeVisible(WebDriver driver, By locator){
+    public static WebElement tryWaitForElementToBeVisible(WebDriver driver, By locator) {
         try {
-            return ((BasePage) driver).WaitFor(ExpectedConditions.visibilityOfElementLocated(locator));
-        } catch (Exception e){
+            return new WebDriverHelper(driver).WaitFor(ExpectedConditions.visibilityOfElementLocated(locator));
+        } catch (Exception e) {
             throw new RuntimeException("Element failed to be located: " + e.getMessage());
         }
     }
