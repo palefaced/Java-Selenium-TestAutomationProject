@@ -102,7 +102,7 @@ public class WebDriverHelper extends BasePage {
             File file = new File(path);
             return file.getAbsolutePath();
         } catch (Exception e) {
-            throw new RuntimeException("File not found: " + path);
+            throw new RuntimeException("Absolute path for the file not found: " + path);
         }
     }
 
@@ -118,7 +118,23 @@ public class WebDriverHelper extends BasePage {
         try {
             return new WebDriverHelper(driver).WaitFor(ExpectedConditions.visibilityOfElementLocated(locator));
         } catch (Exception e) {
-            throw new RuntimeException("Element failed to be located: " + e.getMessage());
+            throw new RuntimeException("Element not visible: " + e.getMessage());
+        }
+    }
+
+    public static List<WebElement> tryWaitForElementsToBeVisible(WebDriver driver, By locator) {
+        try {
+            return new WebDriverHelper(driver).WaitFor(ExpectedConditions.visibilityOfAllElementsLocatedBy(locator));
+        } catch (Exception e) {
+            throw new RuntimeException("Elements not visible: " + e.getMessage());
+        }
+    }
+
+    public static String tryReturnCSSValue(WebElement element, String property) {
+        try {
+            return element.getCssValue(property);
+        } catch (Exception e) {
+            throw new RuntimeException("CSS value of element not found: " + e.getMessage());
         }
     }
 }

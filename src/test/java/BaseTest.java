@@ -17,8 +17,8 @@ public class BaseTest {
         String browser = ConfigReader.getConfig().getEnvironment().getBrowser();
 
         if (browser.toLowerCase().equals("chrome")) {
-//            Required to run test execution in GITHUB Actions
 
+//            //Required to run test execution in GITHUB Actions
             ChromeOptions options = new ChromeOptions();
             options.addArguments("--headless");
             options.addArguments("--disable-gpu");  // Disable GPU hardware acceleration
@@ -26,6 +26,8 @@ public class BaseTest {
             options.addArguments("--remote-debugging-port=9222");  // Required to avoid "DevToolsActivePort" error
 
             this.driver = new ChromeDriver(options);
+
+            //Disable the upper and enable that block to run tests in GUI mode
             // this.driver = new ChromeDriver();
 
         } else if (browser.toLowerCase().equals("firefox")) {

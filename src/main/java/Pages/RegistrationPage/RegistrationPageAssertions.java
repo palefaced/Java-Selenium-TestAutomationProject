@@ -45,7 +45,7 @@ public class RegistrationPageAssertions extends BasePage {
     }
 
     public void AssertFormIsSuccessfullySubmittedByLabel() {
-        Assert.assertEquals(elements().successfullySubmittingFormMessage(),
+        Assert.assertEquals(elements().modalWindowMessage(),
                 Constants_Registration_Page.SUCCESSFULLY_SUBMITTED_FORM_MSG);
     }
 }

@@ -2,13 +2,10 @@ package Pages.RegistrationPage;
 
 import Pages.BasePage;
 import Utils.helpers.WebDriverHelper;
-import org.apache.hc.client5.http.HttpRoute;
-import org.bouncycastle.crypto.agreement.ECDHCUnifiedAgreement;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Wait;
 
 import java.util.List;
 
@@ -52,67 +49,35 @@ public class RegistrationPageElements extends BasePage {
     }
 
     public List<WebElement> dayCells() {
-        try {
-            return WaitFor(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//div[contains(@class, 'react-datepicker__day')]")));
-        } catch (Exception e) {
-            throw new RuntimeException("Element not found: " + e.getMessage());
-        }
+        return WebDriverHelper.tryWaitForElementsToBeVisible(Driver(), By.xpath("//div[contains(@class, 'react-datepicker__day')]"));
     }
 
     public WebElement subjectField() {
-        try {
-            return WaitFor(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='subjectsInput']")));
-        } catch (Exception e) {
-            throw new RuntimeException("Element not found: " + e.getMessage());
-        }
+        return WebDriverHelper.tryWaitForElementToBeClickable(Driver(), By.xpath("//input[@id='subjectsInput']"));
     }
 
     public List<WebElement> hobbies() {
-        try {
-            return WaitFor(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//label[contains(@for, 'hobbies-checkbox-')]")));
-        } catch (Exception e) {
-            throw new RuntimeException("Element not found: " + e.getMessage());
-        }
+        return WebDriverHelper.tryWaitForElementsToBeVisible(Driver(), By.xpath("//label[contains(@for, 'hobbies-checkbox-')]"));
     }
 
     public WebElement picButton() {
-        try {
-            return WaitFor(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"uploadPicture\"]")));
-        } catch (Exception e) {
-            throw new RuntimeException("Element not found: " + e.getMessage());
-        }
+        return WebDriverHelper.tryWaitForElementToBeClickable(Driver(), By.xpath("//*[@id=\"uploadPicture\"]"));
     }
 
     public WebElement currentAddressField() {
-        try {
-            return WaitFor(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"currentAddress\"]")));
-        } catch (Exception e) {
-            throw new RuntimeException("Element not found: " + e.getMessage());
-        }
+        return WebDriverHelper.tryWaitForElementToBeVisible(Driver(), By.xpath("//*[@id=\"currentAddress\"]"));
     }
 
     public WebElement stateDD() {
-        try {
-            return WaitFor(ExpectedConditions.elementToBeClickable(By.id("state")));
-        } catch (Exception e) {
-            throw new RuntimeException("Element not found: " + e.getMessage());
-        }
+        return WebDriverHelper.tryWaitForElementToBeClickable(Driver(), By.id("state"));
     }
 
     public WebElement stateValue(String state) {
-        try {
-            return WaitFor(ExpectedConditions.elementToBeClickable(By.xpath(String.format("//div[contains(text(),'%s')]", state))));
-        } catch (Exception e) {
-            throw new RuntimeException("Element not found: " + e.getMessage());
-        }
+        return WebDriverHelper.tryWaitForElementToBeClickable(Driver(), By.xpath(String.format("//div[contains(text(),'%s')]", state)));
     }
 
     public WebElement cityDD() {
-        try {
-            return WaitFor(ExpectedConditions.elementToBeClickable(By.id("city")));
-        } catch (Exception e) {
-            throw new RuntimeException("Element not found: " + e.getMessage());
-        }
+        return WebDriverHelper.tryWaitForElementToBeClickable(Driver(), By.id("city"));
     }
 
     public WebElement cityValue(String city) {
@@ -124,11 +89,7 @@ public class RegistrationPageElements extends BasePage {
     }
 
     public String getFieldBackGroundImage(WebElement element) {
-        try {
-            return element.getCssValue("background-image");
-        } catch (Exception e) {
-            throw new RuntimeException("Element not found: " + e.getMessage());
-        }
+        return WebDriverHelper.tryReturnCSSValue(element, "background-image");
     }
 
     public WebElement femaleGender() {
@@ -136,15 +97,10 @@ public class RegistrationPageElements extends BasePage {
     }
 
     public String getElementColor(WebElement element) {
-        return element.getCssValue("color");
+        return WebDriverHelper.tryReturnCSSValue(element, "color");
     }
 
-    public String successfullySubmittingFormMessage() {
-        try {
-            WebElement element = WaitFor(ExpectedConditions.visibilityOfElementLocated((By.id("example-modal-sizes-title-lg"))));
-            return element.getText();
-        } catch (Exception e) {
-            throw new RuntimeException("Element not found: " + e.getMessage());
-        }
+    public String modalWindowMessage() {
+        return WebDriverHelper.tryWaitForElementToBeVisible(Driver(), By.id("example-modal-sizes-title-lg")).getText();
     }
 }
