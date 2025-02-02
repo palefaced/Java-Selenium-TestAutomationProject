@@ -1,20 +1,26 @@
 package Utils.helpers;
 
 import Pages.BasePage;
+import Utils.readers.ConfigReader;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.File;
+import java.time.Duration;
 import java.util.List;
 
-public class WebDriverHelper extends BasePage {
+public class WebDriverHelper {
 
-    public WebDriverHelper(WebDriver driver) {
-        super(driver);
+    private static <T> T waitFor(WebDriver driver, ExpectedCondition<T> condition) {
+        int waitTime = ConfigReader.getConfig().getTimeouts().getExplicitWait();
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(waitTime));
+        return wait.until(condition);
     }
 
     public static void tryToNavigateToURL(WebDriver driver, String url) {
@@ -108,7 +114,7 @@ public class WebDriverHelper extends BasePage {
 
     public static WebElement tryWaitForElementToBeClickable(WebDriver driver, By locator) {
         try {
-            return new WebDriverHelper(driver).WaitFor(ExpectedConditions.elementToBeClickable(locator));
+            return waitFor(driver, ExpectedConditions.elementToBeClickable(locator));
         } catch (Exception e) {
             throw new RuntimeException("Element failed to be clicked: " + e.getMessage());
         }
@@ -116,7 +122,7 @@ public class WebDriverHelper extends BasePage {
 
     public static WebElement tryWaitForElementToBeVisible(WebDriver driver, By locator) {
         try {
-            return new WebDriverHelper(driver).WaitFor(ExpectedConditions.visibilityOfElementLocated(locator));
+            return waitFor(driver, ExpectedConditions.visibilityOfElementLocated(locator));
         } catch (Exception e) {
             throw new RuntimeException("Element not visible: " + e.getMessage());
         }
@@ -124,7 +130,7 @@ public class WebDriverHelper extends BasePage {
 
     public static List<WebElement> tryWaitForElementsToBeVisible(WebDriver driver, By locator) {
         try {
-            return new WebDriverHelper(driver).WaitFor(ExpectedConditions.visibilityOfAllElementsLocatedBy(locator));
+            return waitFor(driver, ExpectedConditions.visibilityOfAllElementsLocatedBy(locator));
         } catch (Exception e) {
             throw new RuntimeException("Elements not visible: " + e.getMessage());
         }
