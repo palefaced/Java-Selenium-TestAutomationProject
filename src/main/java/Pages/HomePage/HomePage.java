@@ -1,7 +1,7 @@
 package Pages.HomePage;
 
 import Pages.BasePage;
-import Utils.helpers.WebDriverHelper;
+import Utils.helpers.ElementActionsHelper;
 import Utils.readers.ConfigReader;
 import org.openqa.selenium.WebDriver;
 
@@ -20,6 +20,6 @@ public class HomePage extends BasePage {
     }
 
     public void navigateTo() {
-        WebDriverHelper.tryToNavigateToURL(Driver(), ConfigReader.getConfig().getEnvironment().getBaseUrl());
+        ElementActionsHelper.tryToNavigateToURL(Driver(), ConfigReader.getConfig().getEnvironment().getBaseUrl());
     }
 }

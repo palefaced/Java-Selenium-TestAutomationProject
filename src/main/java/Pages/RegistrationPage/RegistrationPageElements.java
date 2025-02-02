@@ -1,11 +1,10 @@
 package Pages.RegistrationPage;
 
 import Pages.BasePage;
-import Utils.helpers.WebDriverHelper;
+import Utils.helpers.ElementActionsHelper;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import java.util.List;
 
@@ -16,91 +15,91 @@ public class RegistrationPageElements extends BasePage {
     }
 
     public WebElement firstName() {
-        return WebDriverHelper.tryFindElement(Driver(), By.xpath("//*[@id=\"firstName\"]"));
+        return ElementActionsHelper.tryFindElement(Driver(), By.xpath("//*[@id=\"firstName\"]"));
     }
 
     public WebElement lastName() {
-        return WebDriverHelper.tryFindElement(Driver(), By.xpath("//*[@id=\"lastName\"]"));
+        return ElementActionsHelper.tryFindElement(Driver(), By.xpath("//*[@id=\"lastName\"]"));
     }
 
     public WebElement eMail() {
-        return WebDriverHelper.tryFindElement(Driver(), By.xpath("//*[@id=\"userEmail\"]"));
+        return ElementActionsHelper.tryFindElement(Driver(), By.xpath("//*[@id=\"userEmail\"]"));
     }
 
     //вземам ги като лист с общ къстъм Xpath, след това в основната страница въртя цикъл и си избирам кой да маркирам
     public List<WebElement> genders() {
-        return WebDriverHelper.tryFindElements(Driver(), By.xpath("//label[contains(@for, 'gender-radio-')]"));
+        return ElementActionsHelper.tryFindElements(Driver(), By.xpath("//label[contains(@for, 'gender-radio-')]"));
     }
 
     public WebElement mobilePhone() {
-        return WebDriverHelper.tryFindElement(Driver(), By.xpath("//*[@id=\"userNumber\"]"));
+        return ElementActionsHelper.tryFindElement(Driver(), By.xpath("//*[@id=\"userNumber\"]"));
     }
 
     public WebElement calendarButton() {
-        return WebDriverHelper.tryWaitForElementToBeClickable(Driver(), By.id("dateOfBirthInput"));
+        return ElementActionsHelper.tryWaitForElementToBeClickable(Driver(), By.id("dateOfBirthInput"));
     }
 
     public WebElement monthDD() {
-        return WebDriverHelper.tryWaitForElementToBeClickable(Driver(), By.xpath("//select[contains(@class, 'react-datepicker__month-select')]"));
+        return ElementActionsHelper.tryWaitForElementToBeClickable(Driver(), By.xpath("//select[contains(@class, 'react-datepicker__month-select')]"));
     }
 
     public WebElement yearDD() {
-        return WebDriverHelper.tryWaitForElementToBeClickable(Driver(), By.xpath("//select[contains(@class, 'react-datepicker__year-select')]"));
+        return ElementActionsHelper.tryWaitForElementToBeClickable(Driver(), By.xpath("//select[contains(@class, 'react-datepicker__year-select')]"));
     }
 
     public List<WebElement> dayCells() {
-        return WebDriverHelper.tryWaitForElementsToBeVisible(Driver(), By.xpath("//div[contains(@class, 'react-datepicker__day')]"));
+        return ElementActionsHelper.tryWaitForElementsToBeVisible(Driver(), By.xpath("//div[contains(@class, 'react-datepicker__day')]"));
     }
 
     public WebElement subjectField() {
-        return WebDriverHelper.tryWaitForElementToBeClickable(Driver(), By.xpath("//input[@id='subjectsInput']"));
+        return ElementActionsHelper.tryWaitForElementToBeClickable(Driver(), By.xpath("//input[@id='subjectsInput']"));
     }
 
     public List<WebElement> hobbies() {
-        return WebDriverHelper.tryWaitForElementsToBeVisible(Driver(), By.xpath("//label[contains(@for, 'hobbies-checkbox-')]"));
+        return ElementActionsHelper.tryWaitForElementsToBeVisible(Driver(), By.xpath("//label[contains(@for, 'hobbies-checkbox-')]"));
     }
 
     public WebElement picButton() {
-        return WebDriverHelper.tryWaitForElementToBeClickable(Driver(), By.xpath("//*[@id=\"uploadPicture\"]"));
+        return ElementActionsHelper.tryWaitForElementToBeClickable(Driver(), By.xpath("//*[@id=\"uploadPicture\"]"));
     }
 
     public WebElement currentAddressField() {
-        return WebDriverHelper.tryWaitForElementToBeVisible(Driver(), By.xpath("//*[@id=\"currentAddress\"]"));
+        return ElementActionsHelper.tryWaitForElementToBeVisible(Driver(), By.xpath("//*[@id=\"currentAddress\"]"));
     }
 
     public WebElement stateDD() {
-        return WebDriverHelper.tryWaitForElementToBeClickable(Driver(), By.id("state"));
+        return ElementActionsHelper.tryWaitForElementToBeClickable(Driver(), By.id("state"));
     }
 
     public WebElement stateValue(String state) {
-        return WebDriverHelper.tryWaitForElementToBeClickable(Driver(), By.xpath(String.format("//div[contains(text(),'%s')]", state)));
+        return ElementActionsHelper.tryWaitForElementToBeClickable(Driver(), By.xpath(String.format("//div[contains(text(),'%s')]", state)));
     }
 
     public WebElement cityDD() {
-        return WebDriverHelper.tryWaitForElementToBeClickable(Driver(), By.id("city"));
+        return ElementActionsHelper.tryWaitForElementToBeClickable(Driver(), By.id("city"));
     }
 
     public WebElement cityValue(String city) {
-        return WebDriverHelper.tryWaitForElementToBeClickable(Driver(), By.xpath(String.format("//div[contains(text(),'%s')]", city)));
+        return ElementActionsHelper.tryWaitForElementToBeClickable(Driver(), By.xpath(String.format("//div[contains(text(),'%s')]", city)));
     }
 
     public WebElement submitButton() {
-        return WebDriverHelper.tryFindElement(Driver(), By.xpath("//*[@id=\"submit\"]"));
+        return ElementActionsHelper.tryFindElement(Driver(), By.xpath("//*[@id=\"submit\"]"));
     }
 
     public String getFieldBackGroundImage(WebElement element) {
-        return WebDriverHelper.tryReturnCSSValue(element, "background-image");
+        return ElementActionsHelper.tryReturnCSSValue(element, "background-image");
     }
 
     public WebElement femaleGender() {
-        return WebDriverHelper.tryFindElement(Driver(), By.xpath("//*[@id=\"genterWrapper\"]/div[2]/div[2]/label"));
+        return ElementActionsHelper.tryFindElement(Driver(), By.xpath("//*[@id=\"genterWrapper\"]/div[2]/div[2]/label"));
     }
 
     public String getElementColor(WebElement element) {
-        return WebDriverHelper.tryReturnCSSValue(element, "color");
+        return ElementActionsHelper.tryReturnCSSValue(element, "color");
     }
 
     public String modalWindowMessage() {
-        return WebDriverHelper.tryWaitForElementToBeVisible(Driver(), By.id("example-modal-sizes-title-lg")).getText();
+        return ElementActionsHelper.tryWaitForElementToBeVisible(Driver(), By.id("example-modal-sizes-title-lg")).getText();
     }
 }

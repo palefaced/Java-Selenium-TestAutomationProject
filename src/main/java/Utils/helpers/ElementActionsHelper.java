@@ -1,6 +1,5 @@
 package Utils.helpers;
 
-import Pages.BasePage;
 import Utils.readers.ConfigReader;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
@@ -15,7 +14,7 @@ import java.io.File;
 import java.time.Duration;
 import java.util.List;
 
-public class WebDriverHelper {
+public class ElementActionsHelper {
 
     private static <T> T waitFor(WebDriver driver, ExpectedCondition<T> condition) {
         int waitTime = ConfigReader.getConfig().getTimeouts().getExplicitWait();

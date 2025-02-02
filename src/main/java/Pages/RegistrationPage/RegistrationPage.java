@@ -1,6 +1,6 @@
 package Pages.RegistrationPage;
 
-import Utils.helpers.WebDriverHelper;
+import Utils.helpers.ElementActionsHelper;
 import Utils.readers.ConfigReader;
 import Utils.models.RegistrationUser;
 import Pages.BasePage;
@@ -26,7 +26,7 @@ public class RegistrationPage extends BasePage {
     }
 
     public void navigateTo() {
-        WebDriverHelper.tryToNavigateToURL(Driver(), ConfigReader.getConfig().getEnvironment().getBaseUrl() +
+        ElementActionsHelper.tryToNavigateToURL(Driver(), ConfigReader.getConfig().getEnvironment().getBaseUrl() +
                 Constants_Registration_Page.REGISTRATION_PAGE_TITLE);
     }
 
@@ -75,36 +75,36 @@ public class RegistrationPage extends BasePage {
     }
 
     public void clickOnElement(WebElement element) {
-        WebDriverHelper.tryToClickOnElement(element);
+        ElementActionsHelper.tryToClickOnElement(element);
     }
 
     public void populateField(WebElement element, String text) {
-        WebDriverHelper.trySendKeys(element, text);
+        ElementActionsHelper.trySendKeys(element, text);
     }
 
     public void populateBirthData(WebElement element, String text) {
-        WebDriverHelper.trySelectElement(element, text);
+        ElementActionsHelper.trySelectElement(element, text);
     }
 
     public void selectDateFromCalendar(String day) {
-        WebDriverHelper.trySelectDateFromCalendarWidget(elements().dayCells(), day);
+        ElementActionsHelper.trySelectDateFromCalendarWidget(elements().dayCells(), day);
     }
 
     public void selectSpecificState(String state) {
-        WebDriverHelper.tryToClickOnElement(elements().stateDD());
-        WebDriverHelper.tryToClickOnElement(elements().stateValue(state));
+        ElementActionsHelper.tryToClickOnElement(elements().stateDD());
+        ElementActionsHelper.tryToClickOnElement(elements().stateValue(state));
     }
 
     public void SelectSpecificCity(String city) {
-        WebDriverHelper.tryToClickOnElement(elements().cityDD());
-        WebDriverHelper.tryToClickOnElement(elements().cityValue(city));
+        ElementActionsHelper.tryToClickOnElement(elements().cityDD());
+        ElementActionsHelper.tryToClickOnElement(elements().cityValue(city));
     }
 
     public void selectFromMultipleOptions(List<WebElement> hobbies, List<Boolean> boolValue) {
-        WebDriverHelper.trySelectFromMultipleOptions(hobbies, boolValue);
+        ElementActionsHelper.trySelectFromMultipleOptions(hobbies, boolValue);
     }
 
     public String setAbsolutePath(String relativePath) {
-        return WebDriverHelper.trySetAbsolutePathForFile(relativePath);
+        return ElementActionsHelper.trySetAbsolutePathForFile(relativePath);
     }
 }

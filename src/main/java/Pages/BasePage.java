@@ -16,7 +16,4 @@ public class BasePage {
     public WebDriver Driver(){
         return this.driver;
     }
-
-    //Така ще работи с Лист от Уебелементи и с Сингъл уебелемент, за това ползваме дженерици
-
 }
