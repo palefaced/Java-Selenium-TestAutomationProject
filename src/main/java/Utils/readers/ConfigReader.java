@@ -1,6 +1,7 @@
 package Utils.readers;
 
 import Utils.config.AppConfig;
+import Utils.constants.Constants_Readers;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.io.File;
@@ -18,7 +19,7 @@ public class ConfigReader {
             ObjectMapper objectMapper = new ObjectMapper();
             appConfig = objectMapper.readValue(configFile, AppConfig.class);
         } catch (IOException exception) {
-            throw new RuntimeException("Failed to load appConfig.json", exception);
+            throw new RuntimeException(Constants_Readers.FAILED_TO_LOAD_READER, exception);
         }
     }
 
