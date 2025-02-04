@@ -1,3 +1,4 @@
+import Utils.constants.Constants_Test_Classes;
 import Utils.readers.ConfigReader;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
@@ -7,6 +8,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
+import java.util.List;
+
 
 public class BaseTest {
     protected WebDriver driver;
@@ -15,26 +18,23 @@ public class BaseTest {
     public void setUp() {
 
         String browser = ConfigReader.getConfig().getEnvironment().getBrowser();
+        Boolean headless = ConfigReader.getConfig().getEnvironment().getHeadless();
 
-        if (browser.toLowerCase().equals("chrome")) {
+        if (browser.toLowerCase().equals(Constants_Test_Classes.chrome)) {
+            if (headless) {
+                ChromeOptions options = new ChromeOptions();
+                List<String> arguments = ConfigReader.getConfig().getEnvironment().getArguments();
+                options.addArguments(arguments);
+                this.driver = new ChromeDriver(options);
+            } else {
+                this.driver = new ChromeDriver();
+            }
 
-//            //Required to run test execution in GITHUB Actions
-            ChromeOptions options = new ChromeOptions();
-            options.addArguments("--headless");
-            options.addArguments("--disable-gpu");  // Disable GPU hardware acceleration
-            options.addArguments("--no-sandbox");   // Ensure it runs in CI
-            options.addArguments("--remote-debugging-port=9222");  // Required to avoid "DevToolsActivePort" error
-
-            this.driver = new ChromeDriver(options);
-
-            //Disable the upper and enable that block to run tests in GUI mode
-            // this.driver = new ChromeDriver();
-
-        } else if (browser.toLowerCase().equals("firefox")) {
+        } else if (browser.toLowerCase().equals(Constants_Test_Classes.firefox)) {
             WebDriverManager.firefoxdriver().setup();
             this.driver = new FirefoxDriver();
         } else {
-            throw new IllegalArgumentException("Unsupported browser: " + browser);
+            throw new IllegalArgumentException(Constants_Test_Classes.UNSUPPORTED_BROWSER_ERROR_MSG + browser);
         }
         driver.manage().window().maximize();
     }

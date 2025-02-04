@@ -2,7 +2,13 @@
   "environment": {
     "baseUrl": "https://demoqa.com/",
     "browser": "chrome",
-    "headless": false
+    "headless": true,
+    "arguments": [
+      "--headless",
+      "--disable-gpu",
+      "--no-sandbox",
+      "--remote-debugging-port=9222"
+    ]
   },
   "timeouts": {
     "implicitWait": 5,
