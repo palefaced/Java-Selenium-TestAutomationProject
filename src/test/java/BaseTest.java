@@ -34,7 +34,7 @@ public class BaseTest {
             WebDriverManager.firefoxdriver().setup();
             this.driver = new FirefoxDriver();
         } else {
-            throw new IllegalArgumentException("Unsupported browser" + browser);
+            throw new IllegalArgumentException("Unsupported browser: " + browser);
         }
         driver.manage().window().maximize();
     }

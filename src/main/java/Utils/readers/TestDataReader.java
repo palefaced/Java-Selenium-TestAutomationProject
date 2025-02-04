@@ -1,5 +1,6 @@
 package Utils.readers;
 
+import Utils.constants.Constants_Readers;
 import Utils.models.RegistrationUser;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -25,9 +26,9 @@ public class TestDataReader {
             return testDataList.stream()
                     .filter(data -> data.getTestCaseID().equalsIgnoreCase(testCaseId))
                     .findFirst()
-                    .orElseThrow(() -> new IllegalArgumentException("No test data found for testCaseId: " + testCaseId));
+                    .orElseThrow(() -> new IllegalArgumentException(Constants_Readers.TEST_DATA_NOT_FOUND_FOR_TEST_CASE + testCaseId));
         } catch (IOException e) {
-            throw new RuntimeException("Failed to read test data from JSON file", e);
+            throw new RuntimeException(Constants_Readers.FAILED_TO_READ_DATA_FROM_JSON, e);
         }
     }
 }
