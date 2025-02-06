@@ -9,7 +9,7 @@ Design Pattern: Custom Page Object Model (POM).
 
 Test Data Management
 
-Source: JSON files used as the data source for test cases.
+Source: JSON files are used as the data source for test cases.
 Purpose: Enables dynamic test execution by fetching inputs from structured JSON data.
 Build and Dependency Management
 
@@ -23,12 +23,13 @@ Test Reporting
 HTML Reports: Implemented to generate detailed reports for each test run, including passed, failed, and skipped test cases.
 Test Cases
 
+Plans for the future: 
 ~100 test cases covering a 2-3-page web application.
 Focused on functional testing and ensuring comprehensive coverage of key scenarios.
 Future Enhancements
 
-Plans for the future - Logger: To capture logs for debugging and improving visibility into test execution.
-Notifications: Email alerts for failed tests or detected bugs.
+To capture logs for debugging and improving visibility into test execution.
+Notifications: Email alerts for failed tests or detected bugs. Log4J Integration, TestNG Retry mechanism Integration, Allure report!
 
 Key Accomplishments:
 Successfully integrated GitHub Actions and Jenkins for CI/CD.
