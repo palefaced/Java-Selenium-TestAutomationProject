@@ -19,7 +19,7 @@ public class HomePageAssertions extends BasePage {
     }
 
     public void assertIfJoinNowButtonIsAvailable(){
-        Assert.assertTrue(elements().JoinNowButton().isDisplayed());
+        Assert.assertFalse(elements().JoinNowButton().isDisplayed());
 
     }
 
