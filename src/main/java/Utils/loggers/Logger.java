@@ -1,9 +1,8 @@
 package Utils.loggers;
 
 import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
 
-public class LoggerUtils {
-    public static final Logger log = LogManager.getLogger(LoggerUtils.class);
+public class Logger {
+    public static final org.apache.logging.log4j.Logger log = LogManager.getLogger(Logger.class);
 }

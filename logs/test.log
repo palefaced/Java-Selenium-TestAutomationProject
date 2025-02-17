@@ -1,0 +1,636 @@
+2025-02-16 11:21:18 [main] INFO  LoggerUtils - Navigating to the Home Page
+2025-02-16 11:21:19 [main] INFO  LoggerUtils - Successfully navigated to the Home Page
+2025-02-16 11:21:19 [main] INFO  LoggerUtils - Navigating to the Home Page
+2025-02-16 11:21:20 [main] INFO  LoggerUtils - Successfully navigated to the Home Page
+2025-02-16 11:21:20 [main] INFO  LoggerUtils - Navigating to the Home Page
+2025-02-16 11:21:20 [main] INFO  LoggerUtils - Successfully navigated to the Home Page
+2025-02-16 11:21:20 [main] INFO  LoggerUtils - Navigating to the Home Page
+2025-02-16 11:21:20 [main] INFO  LoggerUtils - Successfully navigated to the Home Page
+2025-02-16 11:21:21 [main] INFO  LoggerUtils - Navigating to the Registration Page
+2025-02-16 11:21:22 [main] INFO  LoggerUtils - Successfully navigate to the Registration Page
+2025-02-16 11:21:22 [main] INFO  LoggerUtils - Filling Registration form for the user:  Utils.models.RegistrationUser@4893b344
+2025-02-16 11:21:22 [main] INFO  LoggerUtils - Removing all frames from the page
+2025-02-16 11:21:22 [main] INFO  LoggerUtils - Populating field: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> xpath: //*[@id="firstName"]] with text: Niko
+2025-02-16 11:21:22 [main] INFO  LoggerUtils - Populating field: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> xpath: //*[@id="lastName"]] with text: Nikolov
+2025-02-16 11:21:22 [main] INFO  LoggerUtils - Populating field: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> xpath: //*[@id="userEmail"]] with text: asd@abv.bg
+2025-02-16 11:21:22 [main] INFO  LoggerUtils - Populating field: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> xpath: //*[@id="userNumber"]] with text: 08999222222
+2025-02-16 11:21:23 [main] INFO  LoggerUtils - Scrolling element into view: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> id: dateOfBirthInput]
+2025-02-16 11:21:23 [main] INFO  LoggerUtils - Clicking on element: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> id: dateOfBirthInput]
+2025-02-16 11:21:23 [main] INFO  LoggerUtils - Populating birth date: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> xpath: //select[contains(@class, 'react-datepicker__month-select')]] with text: November
+2025-02-16 11:21:23 [main] INFO  LoggerUtils - Populating birth date: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> xpath: //select[contains(@class, 'react-datepicker__year-select')]] with text: 2000
+2025-02-16 11:21:24 [main] INFO  LoggerUtils - Populating field: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> xpath: //input[@id='subjectsInput']] with text: some text subject
+2025-02-16 11:21:24 [main] INFO  LoggerUtils - Scrolling to the bottom of the page
+2025-02-16 11:21:24 [main] INFO  LoggerUtils - Removing all frames from the page
+2025-02-16 11:21:24 [main] INFO  LoggerUtils - Populating field: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> xpath: //*[@id="currentAddress"]] with text: Naitcho Tsanov 13S
+2025-02-16 11:21:24 [main] INFO  LoggerUtils - Clicking on element: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> xpath: //*[@id="submit"]]
+2025-02-16 11:21:24 [main] INFO  LoggerUtils - Navigating to the Registration Page
+2025-02-16 11:21:25 [main] INFO  LoggerUtils - Successfully navigate to the Registration Page
+2025-02-16 11:21:25 [main] INFO  LoggerUtils - Filling Registration form for the user:  Utils.models.RegistrationUser@6d074b14
+2025-02-16 11:21:25 [main] INFO  LoggerUtils - Removing all frames from the page
+2025-02-16 11:21:25 [main] INFO  LoggerUtils - Populating field: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> xpath: //*[@id="firstName"]] with text: 
+2025-02-16 11:21:25 [main] INFO  LoggerUtils - Populating field: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> xpath: //*[@id="lastName"]] with text: Nikolov
+2025-02-16 11:21:25 [main] INFO  LoggerUtils - Populating field: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> xpath: //*[@id="userEmail"]] with text: asd@abv.bg
+2025-02-16 11:21:25 [main] INFO  LoggerUtils - Populating field: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> xpath: //*[@id="userNumber"]] with text: 08999222222
+2025-02-16 11:21:25 [main] INFO  LoggerUtils - Scrolling element into view: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> id: dateOfBirthInput]
+2025-02-16 11:21:25 [main] INFO  LoggerUtils - Clicking on element: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> id: dateOfBirthInput]
+2025-02-16 11:21:25 [main] INFO  LoggerUtils - Populating birth date: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> xpath: //select[contains(@class, 'react-datepicker__month-select')]] with text: November
+2025-02-16 11:21:25 [main] INFO  LoggerUtils - Populating birth date: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> xpath: //select[contains(@class, 'react-datepicker__year-select')]] with text: 2000
+2025-02-16 11:21:25 [main] INFO  LoggerUtils - Populating field: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> xpath: //input[@id='subjectsInput']] with text: some text subject
+2025-02-16 11:21:25 [main] INFO  LoggerUtils - Scrolling to the bottom of the page
+2025-02-16 11:21:25 [main] INFO  LoggerUtils - Removing all frames from the page
+2025-02-16 11:21:25 [main] INFO  LoggerUtils - Populating field: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> xpath: //*[@id="currentAddress"]] with text: Naitcho Tsanov 13S
+2025-02-16 11:21:26 [main] INFO  LoggerUtils - Clicking on element: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> xpath: //*[@id="submit"]]
+2025-02-16 11:21:26 [main] INFO  LoggerUtils - Navigating to the Registration Page
+2025-02-16 11:21:26 [main] INFO  LoggerUtils - Successfully navigate to the Registration Page
+2025-02-16 11:21:26 [main] INFO  LoggerUtils - Filling Registration form for the user:  Utils.models.RegistrationUser@51e754e1
+2025-02-16 11:21:26 [main] INFO  LoggerUtils - Removing all frames from the page
+2025-02-16 11:21:26 [main] INFO  LoggerUtils - Populating field: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> xpath: //*[@id="firstName"]] with text: Niko
+2025-02-16 11:21:26 [main] INFO  LoggerUtils - Populating field: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> xpath: //*[@id="lastName"]] with text: 
+2025-02-16 11:21:26 [main] INFO  LoggerUtils - Populating field: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> xpath: //*[@id="userEmail"]] with text: asd@abv.bg
+2025-02-16 11:21:26 [main] INFO  LoggerUtils - Populating field: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> xpath: //*[@id="userNumber"]] with text: 08999222222
+2025-02-16 11:21:26 [main] INFO  LoggerUtils - Scrolling element into view: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> id: dateOfBirthInput]
+2025-02-16 11:21:26 [main] INFO  LoggerUtils - Clicking on element: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> id: dateOfBirthInput]
+2025-02-16 11:21:26 [main] INFO  LoggerUtils - Populating birth date: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> xpath: //select[contains(@class, 'react-datepicker__month-select')]] with text: November
+2025-02-16 11:21:26 [main] INFO  LoggerUtils - Populating birth date: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> xpath: //select[contains(@class, 'react-datepicker__year-select')]] with text: 2000
+2025-02-16 11:21:27 [main] INFO  LoggerUtils - Populating field: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> xpath: //input[@id='subjectsInput']] with text: some text subject
+2025-02-16 11:21:27 [main] INFO  LoggerUtils - Scrolling to the bottom of the page
+2025-02-16 11:21:27 [main] INFO  LoggerUtils - Removing all frames from the page
+2025-02-16 11:21:27 [main] INFO  LoggerUtils - Populating field: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> xpath: //*[@id="currentAddress"]] with text: Naitcho Tsanov 13S
+2025-02-16 11:21:27 [main] INFO  LoggerUtils - Clicking on element: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> xpath: //*[@id="submit"]]
+2025-02-16 11:21:27 [main] INFO  LoggerUtils - Navigating to the Registration Page
+2025-02-16 11:21:27 [main] INFO  LoggerUtils - Successfully navigate to the Registration Page
+2025-02-16 11:21:27 [main] INFO  LoggerUtils - Filling Registration form for the user:  Utils.models.RegistrationUser@62a6674f
+2025-02-16 11:21:27 [main] INFO  LoggerUtils - Removing all frames from the page
+2025-02-16 11:21:27 [main] INFO  LoggerUtils - Populating field: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> xpath: //*[@id="firstName"]] with text: Niko
+2025-02-16 11:21:27 [main] INFO  LoggerUtils - Populating field: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> xpath: //*[@id="lastName"]] with text: Nikolov
+2025-02-16 11:21:27 [main] INFO  LoggerUtils - Populating field: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> xpath: //*[@id="userEmail"]] with text: asd@abv.bg
+2025-02-16 11:21:27 [main] INFO  LoggerUtils - Populating field: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> xpath: //*[@id="userNumber"]] with text: 08999222222
+2025-02-16 11:21:27 [main] INFO  LoggerUtils - Scrolling element into view: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> id: dateOfBirthInput]
+2025-02-16 11:21:27 [main] INFO  LoggerUtils - Clicking on element: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> id: dateOfBirthInput]
+2025-02-16 11:21:27 [main] INFO  LoggerUtils - Populating birth date: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> xpath: //select[contains(@class, 'react-datepicker__month-select')]] with text: November
+2025-02-16 11:21:27 [main] INFO  LoggerUtils - Populating birth date: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> xpath: //select[contains(@class, 'react-datepicker__year-select')]] with text: 2000
+2025-02-16 11:21:28 [main] INFO  LoggerUtils - Populating field: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> xpath: //input[@id='subjectsInput']] with text: some text subject
+2025-02-16 11:21:28 [main] INFO  LoggerUtils - Scrolling to the bottom of the page
+2025-02-16 11:21:28 [main] INFO  LoggerUtils - Removing all frames from the page
+2025-02-16 11:21:28 [main] INFO  LoggerUtils - Populating field: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> xpath: //*[@id="currentAddress"]] with text: Naitcho Tsanov 13S
+2025-02-16 11:21:28 [main] INFO  LoggerUtils - Clicking on element: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> xpath: //*[@id="submit"]]
+2025-02-16 11:21:28 [main] INFO  LoggerUtils - Navigating to the Registration Page
+2025-02-16 11:21:28 [main] INFO  LoggerUtils - Successfully navigate to the Registration Page
+2025-02-16 11:21:28 [main] INFO  LoggerUtils - Filling Registration form for the user:  Utils.models.RegistrationUser@5c9e8a67
+2025-02-16 11:21:28 [main] INFO  LoggerUtils - Removing all frames from the page
+2025-02-16 11:21:28 [main] INFO  LoggerUtils - Populating field: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> xpath: //*[@id="firstName"]] with text: Niko
+2025-02-16 11:21:28 [main] INFO  LoggerUtils - Populating field: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> xpath: //*[@id="lastName"]] with text: Nikolov
+2025-02-16 11:21:28 [main] INFO  LoggerUtils - Populating field: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> xpath: //*[@id="userEmail"]] with text: asd@abv.bg
+2025-02-16 11:21:29 [main] INFO  LoggerUtils - Populating field: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> xpath: //*[@id="userNumber"]] with text: 
+2025-02-16 11:21:29 [main] INFO  LoggerUtils - Scrolling element into view: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> id: dateOfBirthInput]
+2025-02-16 11:21:29 [main] INFO  LoggerUtils - Clicking on element: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> id: dateOfBirthInput]
+2025-02-16 11:21:29 [main] INFO  LoggerUtils - Populating birth date: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> xpath: //select[contains(@class, 'react-datepicker__month-select')]] with text: November
+2025-02-16 11:21:29 [main] INFO  LoggerUtils - Populating birth date: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> xpath: //select[contains(@class, 'react-datepicker__year-select')]] with text: 2000
+2025-02-16 11:21:29 [main] INFO  LoggerUtils - Populating field: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> xpath: //input[@id='subjectsInput']] with text: some text subject
+2025-02-16 11:21:29 [main] INFO  LoggerUtils - Scrolling to the bottom of the page
+2025-02-16 11:21:29 [main] INFO  LoggerUtils - Removing all frames from the page
+2025-02-16 11:21:29 [main] INFO  LoggerUtils - Populating field: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> xpath: //*[@id="currentAddress"]] with text: Naitcho Tsanov 13S
+2025-02-16 11:21:29 [main] INFO  LoggerUtils - Clicking on element: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> xpath: //*[@id="submit"]]
+2025-02-16 11:21:29 [main] INFO  LoggerUtils - Navigating to the Registration Page
+2025-02-16 11:21:30 [main] INFO  LoggerUtils - Successfully navigate to the Registration Page
+2025-02-16 11:21:30 [main] INFO  LoggerUtils - Filling Registration form for the user:  Utils.models.RegistrationUser@286a4c52
+2025-02-16 11:21:30 [main] INFO  LoggerUtils - Removing all frames from the page
+2025-02-16 11:21:30 [main] INFO  LoggerUtils - Populating field: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> xpath: //*[@id="firstName"]] with text: Niko
+2025-02-16 11:21:30 [main] INFO  LoggerUtils - Populating field: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> xpath: //*[@id="lastName"]] with text: Nikolov
+2025-02-16 11:21:30 [main] INFO  LoggerUtils - Populating field: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> xpath: //*[@id="userEmail"]] with text: asdabv.bg
+2025-02-16 11:21:30 [main] INFO  LoggerUtils - Populating field: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> xpath: //*[@id="userNumber"]] with text: 08999222222
+2025-02-16 11:21:30 [main] INFO  LoggerUtils - Scrolling element into view: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> id: dateOfBirthInput]
+2025-02-16 11:21:30 [main] INFO  LoggerUtils - Clicking on element: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> id: dateOfBirthInput]
+2025-02-16 11:21:30 [main] INFO  LoggerUtils - Populating birth date: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> xpath: //select[contains(@class, 'react-datepicker__month-select')]] with text: November
+2025-02-16 11:21:30 [main] INFO  LoggerUtils - Populating birth date: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> xpath: //select[contains(@class, 'react-datepicker__year-select')]] with text: 2000
+2025-02-16 11:21:30 [main] INFO  LoggerUtils - Populating field: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> xpath: //input[@id='subjectsInput']] with text: some text subject
+2025-02-16 11:21:30 [main] INFO  LoggerUtils - Scrolling to the bottom of the page
+2025-02-16 11:21:30 [main] INFO  LoggerUtils - Removing all frames from the page
+2025-02-16 11:21:30 [main] INFO  LoggerUtils - Populating field: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> xpath: //*[@id="currentAddress"]] with text: Naitcho Tsanov 13S
+2025-02-16 11:21:31 [main] INFO  LoggerUtils - Clicking on element: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> xpath: //*[@id="submit"]]
+2025-02-16 11:21:31 [main] INFO  LoggerUtils - Navigating to the Registration Page
+2025-02-16 11:21:31 [main] INFO  LoggerUtils - Successfully navigate to the Registration Page
+2025-02-16 11:21:31 [main] INFO  LoggerUtils - Filling Registration form for the user:  Utils.models.RegistrationUser@4bbc02ef
+2025-02-16 11:21:31 [main] INFO  LoggerUtils - Removing all frames from the page
+2025-02-16 11:21:31 [main] INFO  LoggerUtils - Populating field: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> xpath: //*[@id="firstName"]] with text: Niko
+2025-02-16 11:21:31 [main] INFO  LoggerUtils - Populating field: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> xpath: //*[@id="lastName"]] with text: Nikolov
+2025-02-16 11:21:31 [main] INFO  LoggerUtils - Populating field: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> xpath: //*[@id="userEmail"]] with text: asd@abv.bg
+2025-02-16 11:21:31 [main] INFO  LoggerUtils - Populating field: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> xpath: //*[@id="userNumber"]] with text: asd
+2025-02-16 11:21:31 [main] INFO  LoggerUtils - Scrolling element into view: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> id: dateOfBirthInput]
+2025-02-16 11:21:31 [main] INFO  LoggerUtils - Clicking on element: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> id: dateOfBirthInput]
+2025-02-16 11:21:31 [main] INFO  LoggerUtils - Populating birth date: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> xpath: //select[contains(@class, 'react-datepicker__month-select')]] with text: November
+2025-02-16 11:21:31 [main] INFO  LoggerUtils - Populating birth date: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> xpath: //select[contains(@class, 'react-datepicker__year-select')]] with text: 2000
+2025-02-16 11:21:31 [main] INFO  LoggerUtils - Populating field: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> xpath: //input[@id='subjectsInput']] with text: some text subject
+2025-02-16 11:21:32 [main] INFO  LoggerUtils - Scrolling to the bottom of the page
+2025-02-16 11:21:32 [main] INFO  LoggerUtils - Removing all frames from the page
+2025-02-16 11:21:32 [main] INFO  LoggerUtils - Populating field: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> xpath: //*[@id="currentAddress"]] with text: Naitcho Tsanov 13S
+2025-02-16 11:21:32 [main] INFO  LoggerUtils - Clicking on element: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> xpath: //*[@id="submit"]]
+2025-02-16 13:41:13 [main] INFO  LoggerUtils - Navigating to the Web Pagehttps://demoqa.com/
+2025-02-16 13:41:14 [main] INFO  LoggerUtils - Successfully navigate to the Web Pagehttps://demoqa.com/
+2025-02-16 13:41:14 [main] INFO  LoggerUtils - Navigating to the Web Pagehttps://demoqa.com/
+2025-02-16 13:41:14 [main] INFO  LoggerUtils - Successfully navigate to the Web Pagehttps://demoqa.com/
+2025-02-16 13:41:14 [main] INFO  LoggerUtils - Navigating to the Web Pagehttps://demoqa.com/
+2025-02-16 13:41:14 [main] INFO  LoggerUtils - Successfully navigate to the Web Pagehttps://demoqa.com/
+2025-02-16 13:41:14 [main] INFO  LoggerUtils - Navigating to the Web Pagehttps://demoqa.com/
+2025-02-16 13:41:15 [main] INFO  LoggerUtils - Successfully navigate to the Web Pagehttps://demoqa.com/
+2025-02-16 13:41:15 [main] INFO  LoggerUtils - Navigating to the Web Pagehttps://demoqa.com/automation-practice-form
+2025-02-16 13:41:17 [main] INFO  LoggerUtils - Successfully navigate to the Web Pagehttps://demoqa.com/automation-practice-form
+2025-02-16 13:41:17 [main] INFO  LoggerUtils - Filling Registration form for the user
+2025-02-16 13:41:17 [main] INFO  LoggerUtils - Removing all frames from the page
+2025-02-16 13:41:17 [main] INFO  LoggerUtils - Scrolling element into view: [[ChromeDriver: chrome on mac (2fc5eeb581d1b9a0ad152612cd94f689)] -> id: dateOfBirthInput]
+2025-02-16 13:41:17 [main] INFO  LoggerUtils - Successfully scrolled element into view
+2025-02-16 13:41:18 [main] INFO  LoggerUtils - Scrolling to the bottom of the page
+2025-02-16 13:41:18 [main] INFO  LoggerUtils - Successfully scrolled to the bottom of the page
+2025-02-16 13:41:18 [main] INFO  LoggerUtils - Removing all frames from the page
+2025-02-16 13:41:18 [main] INFO  LoggerUtils - Navigating to the Web Pagehttps://demoqa.com/automation-practice-form
+2025-02-16 13:41:19 [main] INFO  LoggerUtils - Successfully navigate to the Web Pagehttps://demoqa.com/automation-practice-form
+2025-02-16 13:41:19 [main] INFO  LoggerUtils - Filling Registration form for the user
+2025-02-16 13:41:19 [main] INFO  LoggerUtils - Removing all frames from the page
+2025-02-16 13:41:19 [main] INFO  LoggerUtils - Scrolling element into view: [[ChromeDriver: chrome on mac (2fc5eeb581d1b9a0ad152612cd94f689)] -> id: dateOfBirthInput]
+2025-02-16 13:41:19 [main] INFO  LoggerUtils - Successfully scrolled element into view
+2025-02-16 13:41:19 [main] INFO  LoggerUtils - Scrolling to the bottom of the page
+2025-02-16 13:41:19 [main] INFO  LoggerUtils - Successfully scrolled to the bottom of the page
+2025-02-16 13:41:19 [main] INFO  LoggerUtils - Removing all frames from the page
+2025-02-16 13:41:19 [main] INFO  LoggerUtils - Navigating to the Web Pagehttps://demoqa.com/automation-practice-form
+2025-02-16 13:41:20 [main] INFO  LoggerUtils - Successfully navigate to the Web Pagehttps://demoqa.com/automation-practice-form
+2025-02-16 13:41:20 [main] INFO  LoggerUtils - Filling Registration form for the user
+2025-02-16 13:41:20 [main] INFO  LoggerUtils - Removing all frames from the page
+2025-02-16 13:41:20 [main] INFO  LoggerUtils - Scrolling element into view: [[ChromeDriver: chrome on mac (2fc5eeb581d1b9a0ad152612cd94f689)] -> id: dateOfBirthInput]
+2025-02-16 13:41:20 [main] INFO  LoggerUtils - Successfully scrolled element into view
+2025-02-16 13:41:20 [main] INFO  LoggerUtils - Scrolling to the bottom of the page
+2025-02-16 13:41:20 [main] INFO  LoggerUtils - Successfully scrolled to the bottom of the page
+2025-02-16 13:41:20 [main] INFO  LoggerUtils - Removing all frames from the page
+2025-02-16 13:41:21 [main] INFO  LoggerUtils - Navigating to the Web Pagehttps://demoqa.com/automation-practice-form
+2025-02-16 13:41:21 [main] INFO  LoggerUtils - Successfully navigate to the Web Pagehttps://demoqa.com/automation-practice-form
+2025-02-16 13:41:21 [main] INFO  LoggerUtils - Filling Registration form for the user
+2025-02-16 13:41:21 [main] INFO  LoggerUtils - Removing all frames from the page
+2025-02-16 13:41:21 [main] INFO  LoggerUtils - Scrolling element into view: [[ChromeDriver: chrome on mac (2fc5eeb581d1b9a0ad152612cd94f689)] -> id: dateOfBirthInput]
+2025-02-16 13:41:21 [main] INFO  LoggerUtils - Successfully scrolled element into view
+2025-02-16 13:41:21 [main] INFO  LoggerUtils - Scrolling to the bottom of the page
+2025-02-16 13:41:21 [main] INFO  LoggerUtils - Successfully scrolled to the bottom of the page
+2025-02-16 13:41:21 [main] INFO  LoggerUtils - Removing all frames from the page
+2025-02-16 13:41:22 [main] INFO  LoggerUtils - Navigating to the Web Pagehttps://demoqa.com/automation-practice-form
+2025-02-16 13:41:22 [main] INFO  LoggerUtils - Successfully navigate to the Web Pagehttps://demoqa.com/automation-practice-form
+2025-02-16 13:41:22 [main] INFO  LoggerUtils - Filling Registration form for the user
+2025-02-16 13:41:22 [main] INFO  LoggerUtils - Removing all frames from the page
+2025-02-16 13:41:22 [main] INFO  LoggerUtils - Scrolling element into view: [[ChromeDriver: chrome on mac (2fc5eeb581d1b9a0ad152612cd94f689)] -> id: dateOfBirthInput]
+2025-02-16 13:41:22 [main] INFO  LoggerUtils - Successfully scrolled element into view
+2025-02-16 13:41:23 [main] INFO  LoggerUtils - Scrolling to the bottom of the page
+2025-02-16 13:41:23 [main] INFO  LoggerUtils - Successfully scrolled to the bottom of the page
+2025-02-16 13:41:23 [main] INFO  LoggerUtils - Removing all frames from the page
+2025-02-16 13:41:23 [main] INFO  LoggerUtils - Navigating to the Web Pagehttps://demoqa.com/automation-practice-form
+2025-02-16 13:41:23 [main] INFO  LoggerUtils - Successfully navigate to the Web Pagehttps://demoqa.com/automation-practice-form
+2025-02-16 13:41:23 [main] INFO  LoggerUtils - Filling Registration form for the user
+2025-02-16 13:41:23 [main] INFO  LoggerUtils - Removing all frames from the page
+2025-02-16 13:41:23 [main] INFO  LoggerUtils - Scrolling element into view: [[ChromeDriver: chrome on mac (2fc5eeb581d1b9a0ad152612cd94f689)] -> id: dateOfBirthInput]
+2025-02-16 13:41:23 [main] INFO  LoggerUtils - Successfully scrolled element into view
+2025-02-16 13:41:24 [main] INFO  LoggerUtils - Scrolling to the bottom of the page
+2025-02-16 13:41:24 [main] INFO  LoggerUtils - Successfully scrolled to the bottom of the page
+2025-02-16 13:41:24 [main] INFO  LoggerUtils - Removing all frames from the page
+2025-02-16 13:41:24 [main] INFO  LoggerUtils - Navigating to the Web Pagehttps://demoqa.com/automation-practice-form
+2025-02-16 13:41:24 [main] INFO  LoggerUtils - Successfully navigate to the Web Pagehttps://demoqa.com/automation-practice-form
+2025-02-16 13:41:24 [main] INFO  LoggerUtils - Filling Registration form for the user
+2025-02-16 13:41:24 [main] INFO  LoggerUtils - Removing all frames from the page
+2025-02-16 13:41:24 [main] INFO  LoggerUtils - Scrolling element into view: [[ChromeDriver: chrome on mac (2fc5eeb581d1b9a0ad152612cd94f689)] -> id: dateOfBirthInput]
+2025-02-16 13:41:24 [main] INFO  LoggerUtils - Successfully scrolled element into view
+2025-02-16 13:41:25 [main] INFO  LoggerUtils - Scrolling to the bottom of the page
+2025-02-16 13:41:25 [main] INFO  LoggerUtils - Successfully scrolled to the bottom of the page
+2025-02-16 13:41:25 [main] INFO  LoggerUtils - Removing all frames from the page
+2025-02-17 20:50:30 [main] INFO  Logger - Navigating to the Web Page https://demoqa.com/
+2025-02-17 20:50:31 [main] INFO  Logger - Successfully navigate to the Web Page https://demoqa.com/
+2025-02-17 20:50:31 [main] INFO  Logger - Searching for a element by locator 
+2025-02-17 20:50:31 [main] INFO  Logger - Navigating to the Web Page https://demoqa.com/
+2025-02-17 20:50:32 [main] INFO  Logger - Successfully navigate to the Web Page https://demoqa.com/
+2025-02-17 20:50:32 [main] INFO  Logger - Searching for a element by locator 
+2025-02-17 20:50:32 [main] INFO  Logger - Navigating to the Web Page https://demoqa.com/
+2025-02-17 20:50:32 [main] INFO  Logger - Successfully navigate to the Web Page https://demoqa.com/
+2025-02-17 20:50:32 [main] INFO  Logger - Searching for a element by locator 
+2025-02-17 20:50:32 [main] INFO  Logger - Navigating to the Web Page https://demoqa.com/
+2025-02-17 20:50:33 [main] INFO  Logger - Successfully navigate to the Web Page https://demoqa.com/
+2025-02-17 20:50:33 [main] INFO  Logger - Searching for a element by locator 
+2025-02-17 20:50:33 [main] INFO  Logger - Navigating to the Web Page https://demoqa.com/automation-practice-form
+2025-02-17 20:50:35 [main] INFO  Logger - Successfully navigate to the Web Page https://demoqa.com/automation-practice-form
+2025-02-17 20:50:35 [main] INFO  Logger - Filling Registration form for the user 
+2025-02-17 20:50:35 [main] INFO  Logger - Removing all frames from the page
+2025-02-17 20:50:35 [main] INFO  Logger - Searching for a element by locator 
+2025-02-17 20:50:35 [main] INFO  Logger - Populating field: [[ChromeDriver: chrome on mac (2b0d94f575078ed8971ea8449167b484)] -> xpath: //*[@id="firstName"]] with text: Niko
+2025-02-17 20:50:35 [main] INFO  Logger - Field is populated
+2025-02-17 20:50:35 [main] INFO  Logger - Searching for a element by locator 
+2025-02-17 20:50:35 [main] INFO  Logger - Populating field: [[ChromeDriver: chrome on mac (2b0d94f575078ed8971ea8449167b484)] -> xpath: //*[@id="lastName"]] with text: Nikolov
+2025-02-17 20:50:35 [main] INFO  Logger - Field is populated
+2025-02-17 20:50:35 [main] INFO  Logger - Searching for a element by locator 
+2025-02-17 20:50:35 [main] INFO  Logger - Populating field: [[ChromeDriver: chrome on mac (2b0d94f575078ed8971ea8449167b484)] -> xpath: //*[@id="userEmail"]] with text: asd@abv.bg
+2025-02-17 20:50:35 [main] INFO  Logger - Field is populated
+2025-02-17 20:50:35 [main] INFO  Logger - Searching for elements by locator 
+2025-02-17 20:50:35 [main] INFO  Logger - Selecting a option from multi-select field
+2025-02-17 20:50:35 [main] INFO  Logger - Element is selected 
+2025-02-17 20:50:35 [main] INFO  Logger - Searching for a element by locator 
+2025-02-17 20:50:35 [main] INFO  Logger - Populating field: [[ChromeDriver: chrome on mac (2b0d94f575078ed8971ea8449167b484)] -> xpath: //*[@id="userNumber"]] with text: 08999222222
+2025-02-17 20:50:35 [main] INFO  Logger - Field is populated
+2025-02-17 20:50:35 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:35 [main] INFO  Logger - Scrolling element into view: [[ChromeDriver: chrome on mac (2b0d94f575078ed8971ea8449167b484)] -> id: dateOfBirthInput]
+2025-02-17 20:50:35 [main] INFO  Logger - Successfully scrolled element into view
+2025-02-17 20:50:35 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:35 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:35 [main] INFO  Logger - Element is clicked 
+2025-02-17 20:50:35 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:35 [main] INFO  Logger - Selecting element by visible text [[ChromeDriver: chrome on mac (2b0d94f575078ed8971ea8449167b484)] -> xpath: //select[contains(@class, 'react-datepicker__month-select')]]
+2025-02-17 20:50:35 [main] INFO  Logger - Element is selected 
+2025-02-17 20:50:35 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:35 [main] INFO  Logger - Selecting element by visible text [[ChromeDriver: chrome on mac (2b0d94f575078ed8971ea8449167b484)] -> xpath: //select[contains(@class, 'react-datepicker__year-select')]]
+2025-02-17 20:50:35 [main] INFO  Logger - Element is selected 
+2025-02-17 20:50:36 [main] INFO  Logger - Selecting date from Calendar
+2025-02-17 20:50:36 [main] INFO  Logger - Date from Calendar is selected
+2025-02-17 20:50:36 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:36 [main] INFO  Logger - Populating field: [[ChromeDriver: chrome on mac (2b0d94f575078ed8971ea8449167b484)] -> xpath: //input[@id='subjectsInput']] with text: some text subject
+2025-02-17 20:50:36 [main] INFO  Logger - Field is populated
+2025-02-17 20:50:36 [main] INFO  Logger - Scrolling to the bottom of the page
+2025-02-17 20:50:36 [main] INFO  Logger - Successfully scrolled to the bottom of the page
+2025-02-17 20:50:36 [main] INFO  Logger - Removing all frames from the page
+2025-02-17 20:50:36 [main] INFO  Logger - Selecting a option from multi-select field
+2025-02-17 20:50:36 [main] INFO  Logger - Element is selected 
+2025-02-17 20:50:36 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:36 [main] INFO  Logger - Setting absolute path for a file
+2025-02-17 20:50:36 [main] INFO  Logger - Populating field: [[ChromeDriver: chrome on mac (2b0d94f575078ed8971ea8449167b484)] -> xpath: //*[@id="currentAddress"]] with text: Naitcho Tsanov 13S
+2025-02-17 20:50:36 [main] INFO  Logger - Field is populated
+2025-02-17 20:50:36 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:36 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:36 [main] INFO  Logger - Element is clicked 
+2025-02-17 20:50:36 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:36 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:36 [main] INFO  Logger - Element is clicked 
+2025-02-17 20:50:36 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:36 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:37 [main] INFO  Logger - Element is clicked 
+2025-02-17 20:50:37 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:37 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:37 [main] INFO  Logger - Element is clicked 
+2025-02-17 20:50:37 [main] INFO  Logger - Searching for a element by locator 
+2025-02-17 20:50:37 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:37 [main] INFO  Logger - Element is clicked 
+2025-02-17 20:50:37 [main] INFO  Logger - Navigating to the Web Page https://demoqa.com/automation-practice-form
+2025-02-17 20:50:37 [main] INFO  Logger - Successfully navigate to the Web Page https://demoqa.com/automation-practice-form
+2025-02-17 20:50:37 [main] INFO  Logger - Filling Registration form for the user 
+2025-02-17 20:50:37 [main] INFO  Logger - Removing all frames from the page
+2025-02-17 20:50:37 [main] INFO  Logger - Searching for a element by locator 
+2025-02-17 20:50:37 [main] INFO  Logger - Populating field: [[ChromeDriver: chrome on mac (2b0d94f575078ed8971ea8449167b484)] -> xpath: //*[@id="firstName"]] with text: 
+2025-02-17 20:50:37 [main] INFO  Logger - Field is populated
+2025-02-17 20:50:37 [main] INFO  Logger - Searching for a element by locator 
+2025-02-17 20:50:37 [main] INFO  Logger - Populating field: [[ChromeDriver: chrome on mac (2b0d94f575078ed8971ea8449167b484)] -> xpath: //*[@id="lastName"]] with text: Nikolov
+2025-02-17 20:50:37 [main] INFO  Logger - Field is populated
+2025-02-17 20:50:37 [main] INFO  Logger - Searching for a element by locator 
+2025-02-17 20:50:37 [main] INFO  Logger - Populating field: [[ChromeDriver: chrome on mac (2b0d94f575078ed8971ea8449167b484)] -> xpath: //*[@id="userEmail"]] with text: asd@abv.bg
+2025-02-17 20:50:37 [main] INFO  Logger - Field is populated
+2025-02-17 20:50:37 [main] INFO  Logger - Searching for elements by locator 
+2025-02-17 20:50:37 [main] INFO  Logger - Selecting a option from multi-select field
+2025-02-17 20:50:37 [main] INFO  Logger - Element is selected 
+2025-02-17 20:50:37 [main] INFO  Logger - Searching for a element by locator 
+2025-02-17 20:50:37 [main] INFO  Logger - Populating field: [[ChromeDriver: chrome on mac (2b0d94f575078ed8971ea8449167b484)] -> xpath: //*[@id="userNumber"]] with text: 08999222222
+2025-02-17 20:50:37 [main] INFO  Logger - Field is populated
+2025-02-17 20:50:37 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:37 [main] INFO  Logger - Scrolling element into view: [[ChromeDriver: chrome on mac (2b0d94f575078ed8971ea8449167b484)] -> id: dateOfBirthInput]
+2025-02-17 20:50:37 [main] INFO  Logger - Successfully scrolled element into view
+2025-02-17 20:50:37 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:37 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:37 [main] INFO  Logger - Element is clicked 
+2025-02-17 20:50:37 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:37 [main] INFO  Logger - Selecting element by visible text [[ChromeDriver: chrome on mac (2b0d94f575078ed8971ea8449167b484)] -> xpath: //select[contains(@class, 'react-datepicker__month-select')]]
+2025-02-17 20:50:37 [main] INFO  Logger - Element is selected 
+2025-02-17 20:50:37 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:37 [main] INFO  Logger - Selecting element by visible text [[ChromeDriver: chrome on mac (2b0d94f575078ed8971ea8449167b484)] -> xpath: //select[contains(@class, 'react-datepicker__year-select')]]
+2025-02-17 20:50:37 [main] INFO  Logger - Element is selected 
+2025-02-17 20:50:37 [main] INFO  Logger - Selecting date from Calendar
+2025-02-17 20:50:38 [main] INFO  Logger - Date from Calendar is selected
+2025-02-17 20:50:38 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:38 [main] INFO  Logger - Populating field: [[ChromeDriver: chrome on mac (2b0d94f575078ed8971ea8449167b484)] -> xpath: //input[@id='subjectsInput']] with text: some text subject
+2025-02-17 20:50:38 [main] INFO  Logger - Field is populated
+2025-02-17 20:50:38 [main] INFO  Logger - Scrolling to the bottom of the page
+2025-02-17 20:50:38 [main] INFO  Logger - Successfully scrolled to the bottom of the page
+2025-02-17 20:50:38 [main] INFO  Logger - Removing all frames from the page
+2025-02-17 20:50:38 [main] INFO  Logger - Selecting a option from multi-select field
+2025-02-17 20:50:38 [main] INFO  Logger - Element is selected 
+2025-02-17 20:50:38 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:38 [main] INFO  Logger - Setting absolute path for a file
+2025-02-17 20:50:38 [main] INFO  Logger - Populating field: [[ChromeDriver: chrome on mac (2b0d94f575078ed8971ea8449167b484)] -> xpath: //*[@id="currentAddress"]] with text: Naitcho Tsanov 13S
+2025-02-17 20:50:38 [main] INFO  Logger - Field is populated
+2025-02-17 20:50:38 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:38 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:38 [main] INFO  Logger - Element is clicked 
+2025-02-17 20:50:38 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:38 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:38 [main] INFO  Logger - Element is clicked 
+2025-02-17 20:50:38 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:38 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:38 [main] INFO  Logger - Element is clicked 
+2025-02-17 20:50:38 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:38 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:38 [main] INFO  Logger - Element is clicked 
+2025-02-17 20:50:38 [main] INFO  Logger - Searching for a element by locator 
+2025-02-17 20:50:38 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:38 [main] INFO  Logger - Element is clicked 
+2025-02-17 20:50:38 [main] INFO  Logger - Searching for a element by locator 
+2025-02-17 20:50:38 [main] INFO  Logger - Navigating to the Web Page https://demoqa.com/automation-practice-form
+2025-02-17 20:50:38 [main] INFO  Logger - Successfully navigate to the Web Page https://demoqa.com/automation-practice-form
+2025-02-17 20:50:38 [main] INFO  Logger - Filling Registration form for the user 
+2025-02-17 20:50:38 [main] INFO  Logger - Removing all frames from the page
+2025-02-17 20:50:38 [main] INFO  Logger - Searching for a element by locator 
+2025-02-17 20:50:38 [main] INFO  Logger - Populating field: [[ChromeDriver: chrome on mac (2b0d94f575078ed8971ea8449167b484)] -> xpath: //*[@id="firstName"]] with text: Niko
+2025-02-17 20:50:38 [main] INFO  Logger - Field is populated
+2025-02-17 20:50:38 [main] INFO  Logger - Searching for a element by locator 
+2025-02-17 20:50:38 [main] INFO  Logger - Populating field: [[ChromeDriver: chrome on mac (2b0d94f575078ed8971ea8449167b484)] -> xpath: //*[@id="lastName"]] with text: 
+2025-02-17 20:50:38 [main] INFO  Logger - Field is populated
+2025-02-17 20:50:38 [main] INFO  Logger - Searching for a element by locator 
+2025-02-17 20:50:38 [main] INFO  Logger - Populating field: [[ChromeDriver: chrome on mac (2b0d94f575078ed8971ea8449167b484)] -> xpath: //*[@id="userEmail"]] with text: asd@abv.bg
+2025-02-17 20:50:38 [main] INFO  Logger - Field is populated
+2025-02-17 20:50:38 [main] INFO  Logger - Searching for elements by locator 
+2025-02-17 20:50:38 [main] INFO  Logger - Selecting a option from multi-select field
+2025-02-17 20:50:38 [main] INFO  Logger - Element is selected 
+2025-02-17 20:50:38 [main] INFO  Logger - Searching for a element by locator 
+2025-02-17 20:50:38 [main] INFO  Logger - Populating field: [[ChromeDriver: chrome on mac (2b0d94f575078ed8971ea8449167b484)] -> xpath: //*[@id="userNumber"]] with text: 08999222222
+2025-02-17 20:50:38 [main] INFO  Logger - Field is populated
+2025-02-17 20:50:38 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:38 [main] INFO  Logger - Scrolling element into view: [[ChromeDriver: chrome on mac (2b0d94f575078ed8971ea8449167b484)] -> id: dateOfBirthInput]
+2025-02-17 20:50:38 [main] INFO  Logger - Successfully scrolled element into view
+2025-02-17 20:50:38 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:38 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:39 [main] INFO  Logger - Element is clicked 
+2025-02-17 20:50:39 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:39 [main] INFO  Logger - Selecting element by visible text [[ChromeDriver: chrome on mac (2b0d94f575078ed8971ea8449167b484)] -> xpath: //select[contains(@class, 'react-datepicker__month-select')]]
+2025-02-17 20:50:39 [main] INFO  Logger - Element is selected 
+2025-02-17 20:50:39 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:39 [main] INFO  Logger - Selecting element by visible text [[ChromeDriver: chrome on mac (2b0d94f575078ed8971ea8449167b484)] -> xpath: //select[contains(@class, 'react-datepicker__year-select')]]
+2025-02-17 20:50:39 [main] INFO  Logger - Element is selected 
+2025-02-17 20:50:39 [main] INFO  Logger - Selecting date from Calendar
+2025-02-17 20:50:39 [main] INFO  Logger - Date from Calendar is selected
+2025-02-17 20:50:39 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:39 [main] INFO  Logger - Populating field: [[ChromeDriver: chrome on mac (2b0d94f575078ed8971ea8449167b484)] -> xpath: //input[@id='subjectsInput']] with text: some text subject
+2025-02-17 20:50:39 [main] INFO  Logger - Field is populated
+2025-02-17 20:50:39 [main] INFO  Logger - Scrolling to the bottom of the page
+2025-02-17 20:50:39 [main] INFO  Logger - Successfully scrolled to the bottom of the page
+2025-02-17 20:50:39 [main] INFO  Logger - Removing all frames from the page
+2025-02-17 20:50:39 [main] INFO  Logger - Selecting a option from multi-select field
+2025-02-17 20:50:39 [main] INFO  Logger - Element is selected 
+2025-02-17 20:50:39 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:39 [main] INFO  Logger - Setting absolute path for a file
+2025-02-17 20:50:39 [main] INFO  Logger - Populating field: [[ChromeDriver: chrome on mac (2b0d94f575078ed8971ea8449167b484)] -> xpath: //*[@id="currentAddress"]] with text: Naitcho Tsanov 13S
+2025-02-17 20:50:39 [main] INFO  Logger - Field is populated
+2025-02-17 20:50:39 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:39 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:39 [main] INFO  Logger - Element is clicked 
+2025-02-17 20:50:39 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:39 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:39 [main] INFO  Logger - Element is clicked 
+2025-02-17 20:50:39 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:39 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:39 [main] INFO  Logger - Element is clicked 
+2025-02-17 20:50:39 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:39 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:39 [main] INFO  Logger - Element is clicked 
+2025-02-17 20:50:39 [main] INFO  Logger - Searching for a element by locator 
+2025-02-17 20:50:39 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:39 [main] INFO  Logger - Element is clicked 
+2025-02-17 20:50:39 [main] INFO  Logger - Searching for a element by locator 
+2025-02-17 20:50:39 [main] INFO  Logger - Navigating to the Web Page https://demoqa.com/automation-practice-form
+2025-02-17 20:50:40 [main] INFO  Logger - Successfully navigate to the Web Page https://demoqa.com/automation-practice-form
+2025-02-17 20:50:40 [main] INFO  Logger - Filling Registration form for the user 
+2025-02-17 20:50:40 [main] INFO  Logger - Removing all frames from the page
+2025-02-17 20:50:40 [main] INFO  Logger - Searching for a element by locator 
+2025-02-17 20:50:40 [main] INFO  Logger - Populating field: [[ChromeDriver: chrome on mac (2b0d94f575078ed8971ea8449167b484)] -> xpath: //*[@id="firstName"]] with text: Niko
+2025-02-17 20:50:40 [main] INFO  Logger - Field is populated
+2025-02-17 20:50:40 [main] INFO  Logger - Searching for a element by locator 
+2025-02-17 20:50:40 [main] INFO  Logger - Populating field: [[ChromeDriver: chrome on mac (2b0d94f575078ed8971ea8449167b484)] -> xpath: //*[@id="lastName"]] with text: Nikolov
+2025-02-17 20:50:40 [main] INFO  Logger - Field is populated
+2025-02-17 20:50:40 [main] INFO  Logger - Searching for a element by locator 
+2025-02-17 20:50:40 [main] INFO  Logger - Populating field: [[ChromeDriver: chrome on mac (2b0d94f575078ed8971ea8449167b484)] -> xpath: //*[@id="userEmail"]] with text: asd@abv.bg
+2025-02-17 20:50:40 [main] INFO  Logger - Field is populated
+2025-02-17 20:50:40 [main] INFO  Logger - Searching for elements by locator 
+2025-02-17 20:50:40 [main] INFO  Logger - Selecting a option from multi-select field
+2025-02-17 20:50:40 [main] INFO  Logger - Element is selected 
+2025-02-17 20:50:40 [main] INFO  Logger - Searching for a element by locator 
+2025-02-17 20:50:40 [main] INFO  Logger - Populating field: [[ChromeDriver: chrome on mac (2b0d94f575078ed8971ea8449167b484)] -> xpath: //*[@id="userNumber"]] with text: 08999222222
+2025-02-17 20:50:40 [main] INFO  Logger - Field is populated
+2025-02-17 20:50:40 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:40 [main] INFO  Logger - Scrolling element into view: [[ChromeDriver: chrome on mac (2b0d94f575078ed8971ea8449167b484)] -> id: dateOfBirthInput]
+2025-02-17 20:50:40 [main] INFO  Logger - Successfully scrolled element into view
+2025-02-17 20:50:40 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:40 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:40 [main] INFO  Logger - Element is clicked 
+2025-02-17 20:50:40 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:40 [main] INFO  Logger - Selecting element by visible text [[ChromeDriver: chrome on mac (2b0d94f575078ed8971ea8449167b484)] -> xpath: //select[contains(@class, 'react-datepicker__month-select')]]
+2025-02-17 20:50:40 [main] INFO  Logger - Element is selected 
+2025-02-17 20:50:40 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:40 [main] INFO  Logger - Selecting element by visible text [[ChromeDriver: chrome on mac (2b0d94f575078ed8971ea8449167b484)] -> xpath: //select[contains(@class, 'react-datepicker__year-select')]]
+2025-02-17 20:50:40 [main] INFO  Logger - Element is selected 
+2025-02-17 20:50:40 [main] INFO  Logger - Selecting date from Calendar
+2025-02-17 20:50:40 [main] INFO  Logger - Date from Calendar is selected
+2025-02-17 20:50:40 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:40 [main] INFO  Logger - Populating field: [[ChromeDriver: chrome on mac (2b0d94f575078ed8971ea8449167b484)] -> xpath: //input[@id='subjectsInput']] with text: some text subject
+2025-02-17 20:50:40 [main] INFO  Logger - Field is populated
+2025-02-17 20:50:40 [main] INFO  Logger - Scrolling to the bottom of the page
+2025-02-17 20:50:40 [main] INFO  Logger - Successfully scrolled to the bottom of the page
+2025-02-17 20:50:40 [main] INFO  Logger - Removing all frames from the page
+2025-02-17 20:50:40 [main] INFO  Logger - Selecting a option from multi-select field
+2025-02-17 20:50:40 [main] INFO  Logger - Element is selected 
+2025-02-17 20:50:40 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:40 [main] INFO  Logger - Setting absolute path for a file
+2025-02-17 20:50:40 [main] INFO  Logger - Populating field: [[ChromeDriver: chrome on mac (2b0d94f575078ed8971ea8449167b484)] -> xpath: //*[@id="currentAddress"]] with text: Naitcho Tsanov 13S
+2025-02-17 20:50:40 [main] INFO  Logger - Field is populated
+2025-02-17 20:50:40 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:40 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:40 [main] INFO  Logger - Element is clicked 
+2025-02-17 20:50:40 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:40 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:40 [main] INFO  Logger - Element is clicked 
+2025-02-17 20:50:40 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:40 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:40 [main] INFO  Logger - Element is clicked 
+2025-02-17 20:50:40 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:40 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:40 [main] INFO  Logger - Element is clicked 
+2025-02-17 20:50:40 [main] INFO  Logger - Searching for a element by locator 
+2025-02-17 20:50:40 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:40 [main] INFO  Logger - Element is clicked 
+2025-02-17 20:50:40 [main] INFO  Logger - Searching for a element by locator 
+2025-02-17 20:50:40 [main] INFO  Logger - Navigating to the Web Page https://demoqa.com/automation-practice-form
+2025-02-17 20:50:41 [main] INFO  Logger - Successfully navigate to the Web Page https://demoqa.com/automation-practice-form
+2025-02-17 20:50:41 [main] INFO  Logger - Filling Registration form for the user 
+2025-02-17 20:50:41 [main] INFO  Logger - Removing all frames from the page
+2025-02-17 20:50:41 [main] INFO  Logger - Searching for a element by locator 
+2025-02-17 20:50:41 [main] INFO  Logger - Populating field: [[ChromeDriver: chrome on mac (2b0d94f575078ed8971ea8449167b484)] -> xpath: //*[@id="firstName"]] with text: Niko
+2025-02-17 20:50:41 [main] INFO  Logger - Field is populated
+2025-02-17 20:50:41 [main] INFO  Logger - Searching for a element by locator 
+2025-02-17 20:50:41 [main] INFO  Logger - Populating field: [[ChromeDriver: chrome on mac (2b0d94f575078ed8971ea8449167b484)] -> xpath: //*[@id="lastName"]] with text: Nikolov
+2025-02-17 20:50:41 [main] INFO  Logger - Field is populated
+2025-02-17 20:50:41 [main] INFO  Logger - Searching for a element by locator 
+2025-02-17 20:50:41 [main] INFO  Logger - Populating field: [[ChromeDriver: chrome on mac (2b0d94f575078ed8971ea8449167b484)] -> xpath: //*[@id="userEmail"]] with text: asd@abv.bg
+2025-02-17 20:50:41 [main] INFO  Logger - Field is populated
+2025-02-17 20:50:41 [main] INFO  Logger - Searching for elements by locator 
+2025-02-17 20:50:41 [main] INFO  Logger - Selecting a option from multi-select field
+2025-02-17 20:50:41 [main] INFO  Logger - Element is selected 
+2025-02-17 20:50:41 [main] INFO  Logger - Searching for a element by locator 
+2025-02-17 20:50:41 [main] INFO  Logger - Populating field: [[ChromeDriver: chrome on mac (2b0d94f575078ed8971ea8449167b484)] -> xpath: //*[@id="userNumber"]] with text: 
+2025-02-17 20:50:41 [main] INFO  Logger - Field is populated
+2025-02-17 20:50:41 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:41 [main] INFO  Logger - Scrolling element into view: [[ChromeDriver: chrome on mac (2b0d94f575078ed8971ea8449167b484)] -> id: dateOfBirthInput]
+2025-02-17 20:50:41 [main] INFO  Logger - Successfully scrolled element into view
+2025-02-17 20:50:41 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:41 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:41 [main] INFO  Logger - Element is clicked 
+2025-02-17 20:50:41 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:41 [main] INFO  Logger - Selecting element by visible text [[ChromeDriver: chrome on mac (2b0d94f575078ed8971ea8449167b484)] -> xpath: //select[contains(@class, 'react-datepicker__month-select')]]
+2025-02-17 20:50:41 [main] INFO  Logger - Element is selected 
+2025-02-17 20:50:41 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:41 [main] INFO  Logger - Selecting element by visible text [[ChromeDriver: chrome on mac (2b0d94f575078ed8971ea8449167b484)] -> xpath: //select[contains(@class, 'react-datepicker__year-select')]]
+2025-02-17 20:50:41 [main] INFO  Logger - Element is selected 
+2025-02-17 20:50:41 [main] INFO  Logger - Selecting date from Calendar
+2025-02-17 20:50:41 [main] INFO  Logger - Date from Calendar is selected
+2025-02-17 20:50:41 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:41 [main] INFO  Logger - Populating field: [[ChromeDriver: chrome on mac (2b0d94f575078ed8971ea8449167b484)] -> xpath: //input[@id='subjectsInput']] with text: some text subject
+2025-02-17 20:50:41 [main] INFO  Logger - Field is populated
+2025-02-17 20:50:41 [main] INFO  Logger - Scrolling to the bottom of the page
+2025-02-17 20:50:41 [main] INFO  Logger - Successfully scrolled to the bottom of the page
+2025-02-17 20:50:41 [main] INFO  Logger - Removing all frames from the page
+2025-02-17 20:50:41 [main] INFO  Logger - Selecting a option from multi-select field
+2025-02-17 20:50:41 [main] INFO  Logger - Element is selected 
+2025-02-17 20:50:41 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:41 [main] INFO  Logger - Setting absolute path for a file
+2025-02-17 20:50:41 [main] INFO  Logger - Populating field: [[ChromeDriver: chrome on mac (2b0d94f575078ed8971ea8449167b484)] -> xpath: //*[@id="currentAddress"]] with text: Naitcho Tsanov 13S
+2025-02-17 20:50:41 [main] INFO  Logger - Field is populated
+2025-02-17 20:50:41 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:42 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:42 [main] INFO  Logger - Element is clicked 
+2025-02-17 20:50:42 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:42 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:42 [main] INFO  Logger - Element is clicked 
+2025-02-17 20:50:42 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:42 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:42 [main] INFO  Logger - Element is clicked 
+2025-02-17 20:50:42 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:42 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:42 [main] INFO  Logger - Element is clicked 
+2025-02-17 20:50:42 [main] INFO  Logger - Searching for a element by locator 
+2025-02-17 20:50:42 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:42 [main] INFO  Logger - Element is clicked 
+2025-02-17 20:50:42 [main] INFO  Logger - Searching for a element by locator 
+2025-02-17 20:50:42 [main] INFO  Logger - Navigating to the Web Page https://demoqa.com/automation-practice-form
+2025-02-17 20:50:42 [main] INFO  Logger - Successfully navigate to the Web Page https://demoqa.com/automation-practice-form
+2025-02-17 20:50:42 [main] INFO  Logger - Filling Registration form for the user 
+2025-02-17 20:50:42 [main] INFO  Logger - Removing all frames from the page
+2025-02-17 20:50:42 [main] INFO  Logger - Searching for a element by locator 
+2025-02-17 20:50:42 [main] INFO  Logger - Populating field: [[ChromeDriver: chrome on mac (2b0d94f575078ed8971ea8449167b484)] -> xpath: //*[@id="firstName"]] with text: Niko
+2025-02-17 20:50:42 [main] INFO  Logger - Field is populated
+2025-02-17 20:50:42 [main] INFO  Logger - Searching for a element by locator 
+2025-02-17 20:50:42 [main] INFO  Logger - Populating field: [[ChromeDriver: chrome on mac (2b0d94f575078ed8971ea8449167b484)] -> xpath: //*[@id="lastName"]] with text: Nikolov
+2025-02-17 20:50:42 [main] INFO  Logger - Field is populated
+2025-02-17 20:50:42 [main] INFO  Logger - Searching for a element by locator 
+2025-02-17 20:50:42 [main] INFO  Logger - Populating field: [[ChromeDriver: chrome on mac (2b0d94f575078ed8971ea8449167b484)] -> xpath: //*[@id="userEmail"]] with text: asdabv.bg
+2025-02-17 20:50:42 [main] INFO  Logger - Field is populated
+2025-02-17 20:50:42 [main] INFO  Logger - Searching for elements by locator 
+2025-02-17 20:50:42 [main] INFO  Logger - Selecting a option from multi-select field
+2025-02-17 20:50:42 [main] INFO  Logger - Element is selected 
+2025-02-17 20:50:42 [main] INFO  Logger - Searching for a element by locator 
+2025-02-17 20:50:42 [main] INFO  Logger - Populating field: [[ChromeDriver: chrome on mac (2b0d94f575078ed8971ea8449167b484)] -> xpath: //*[@id="userNumber"]] with text: 08999222222
+2025-02-17 20:50:42 [main] INFO  Logger - Field is populated
+2025-02-17 20:50:42 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:42 [main] INFO  Logger - Scrolling element into view: [[ChromeDriver: chrome on mac (2b0d94f575078ed8971ea8449167b484)] -> id: dateOfBirthInput]
+2025-02-17 20:50:42 [main] INFO  Logger - Successfully scrolled element into view
+2025-02-17 20:50:42 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:42 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:42 [main] INFO  Logger - Element is clicked 
+2025-02-17 20:50:42 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:42 [main] INFO  Logger - Selecting element by visible text [[ChromeDriver: chrome on mac (2b0d94f575078ed8971ea8449167b484)] -> xpath: //select[contains(@class, 'react-datepicker__month-select')]]
+2025-02-17 20:50:42 [main] INFO  Logger - Element is selected 
+2025-02-17 20:50:42 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:42 [main] INFO  Logger - Selecting element by visible text [[ChromeDriver: chrome on mac (2b0d94f575078ed8971ea8449167b484)] -> xpath: //select[contains(@class, 'react-datepicker__year-select')]]
+2025-02-17 20:50:42 [main] INFO  Logger - Element is selected 
+2025-02-17 20:50:43 [main] INFO  Logger - Selecting date from Calendar
+2025-02-17 20:50:43 [main] INFO  Logger - Date from Calendar is selected
+2025-02-17 20:50:43 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:43 [main] INFO  Logger - Populating field: [[ChromeDriver: chrome on mac (2b0d94f575078ed8971ea8449167b484)] -> xpath: //input[@id='subjectsInput']] with text: some text subject
+2025-02-17 20:50:43 [main] INFO  Logger - Field is populated
+2025-02-17 20:50:43 [main] INFO  Logger - Scrolling to the bottom of the page
+2025-02-17 20:50:43 [main] INFO  Logger - Successfully scrolled to the bottom of the page
+2025-02-17 20:50:43 [main] INFO  Logger - Removing all frames from the page
+2025-02-17 20:50:43 [main] INFO  Logger - Selecting a option from multi-select field
+2025-02-17 20:50:43 [main] INFO  Logger - Element is selected 
+2025-02-17 20:50:43 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:43 [main] INFO  Logger - Setting absolute path for a file
+2025-02-17 20:50:43 [main] INFO  Logger - Populating field: [[ChromeDriver: chrome on mac (2b0d94f575078ed8971ea8449167b484)] -> xpath: //*[@id="currentAddress"]] with text: Naitcho Tsanov 13S
+2025-02-17 20:50:43 [main] INFO  Logger - Field is populated
+2025-02-17 20:50:43 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:43 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:43 [main] INFO  Logger - Element is clicked 
+2025-02-17 20:50:43 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:43 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:43 [main] INFO  Logger - Element is clicked 
+2025-02-17 20:50:43 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:43 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:43 [main] INFO  Logger - Element is clicked 
+2025-02-17 20:50:43 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:43 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:43 [main] INFO  Logger - Element is clicked 
+2025-02-17 20:50:43 [main] INFO  Logger - Searching for a element by locator 
+2025-02-17 20:50:43 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:43 [main] INFO  Logger - Element is clicked 
+2025-02-17 20:50:43 [main] INFO  Logger - Searching for a element by locator 
+2025-02-17 20:50:43 [main] INFO  Logger - Navigating to the Web Page https://demoqa.com/automation-practice-form
+2025-02-17 20:50:43 [main] INFO  Logger - Successfully navigate to the Web Page https://demoqa.com/automation-practice-form
+2025-02-17 20:50:43 [main] INFO  Logger - Filling Registration form for the user 
+2025-02-17 20:50:43 [main] INFO  Logger - Removing all frames from the page
+2025-02-17 20:50:43 [main] INFO  Logger - Searching for a element by locator 
+2025-02-17 20:50:43 [main] INFO  Logger - Populating field: [[ChromeDriver: chrome on mac (2b0d94f575078ed8971ea8449167b484)] -> xpath: //*[@id="firstName"]] with text: Niko
+2025-02-17 20:50:43 [main] INFO  Logger - Field is populated
+2025-02-17 20:50:43 [main] INFO  Logger - Searching for a element by locator 
+2025-02-17 20:50:43 [main] INFO  Logger - Populating field: [[ChromeDriver: chrome on mac (2b0d94f575078ed8971ea8449167b484)] -> xpath: //*[@id="lastName"]] with text: Nikolov
+2025-02-17 20:50:43 [main] INFO  Logger - Field is populated
+2025-02-17 20:50:43 [main] INFO  Logger - Searching for a element by locator 
+2025-02-17 20:50:43 [main] INFO  Logger - Populating field: [[ChromeDriver: chrome on mac (2b0d94f575078ed8971ea8449167b484)] -> xpath: //*[@id="userEmail"]] with text: asd@abv.bg
+2025-02-17 20:50:43 [main] INFO  Logger - Field is populated
+2025-02-17 20:50:43 [main] INFO  Logger - Searching for elements by locator 
+2025-02-17 20:50:43 [main] INFO  Logger - Selecting a option from multi-select field
+2025-02-17 20:50:43 [main] INFO  Logger - Element is selected 
+2025-02-17 20:50:43 [main] INFO  Logger - Searching for a element by locator 
+2025-02-17 20:50:43 [main] INFO  Logger - Populating field: [[ChromeDriver: chrome on mac (2b0d94f575078ed8971ea8449167b484)] -> xpath: //*[@id="userNumber"]] with text: asd
+2025-02-17 20:50:44 [main] INFO  Logger - Field is populated
+2025-02-17 20:50:44 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:44 [main] INFO  Logger - Scrolling element into view: [[ChromeDriver: chrome on mac (2b0d94f575078ed8971ea8449167b484)] -> id: dateOfBirthInput]
+2025-02-17 20:50:44 [main] INFO  Logger - Successfully scrolled element into view
+2025-02-17 20:50:44 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:44 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:44 [main] INFO  Logger - Element is clicked 
+2025-02-17 20:50:44 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:44 [main] INFO  Logger - Selecting element by visible text [[ChromeDriver: chrome on mac (2b0d94f575078ed8971ea8449167b484)] -> xpath: //select[contains(@class, 'react-datepicker__month-select')]]
+2025-02-17 20:50:44 [main] INFO  Logger - Element is selected 
+2025-02-17 20:50:44 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:44 [main] INFO  Logger - Selecting element by visible text [[ChromeDriver: chrome on mac (2b0d94f575078ed8971ea8449167b484)] -> xpath: //select[contains(@class, 'react-datepicker__year-select')]]
+2025-02-17 20:50:44 [main] INFO  Logger - Element is selected 
+2025-02-17 20:50:44 [main] INFO  Logger - Selecting date from Calendar
+2025-02-17 20:50:44 [main] INFO  Logger - Date from Calendar is selected
+2025-02-17 20:50:44 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:44 [main] INFO  Logger - Populating field: [[ChromeDriver: chrome on mac (2b0d94f575078ed8971ea8449167b484)] -> xpath: //input[@id='subjectsInput']] with text: some text subject
+2025-02-17 20:50:44 [main] INFO  Logger - Field is populated
+2025-02-17 20:50:44 [main] INFO  Logger - Scrolling to the bottom of the page
+2025-02-17 20:50:44 [main] INFO  Logger - Successfully scrolled to the bottom of the page
+2025-02-17 20:50:44 [main] INFO  Logger - Removing all frames from the page
+2025-02-17 20:50:44 [main] INFO  Logger - Selecting a option from multi-select field
+2025-02-17 20:50:44 [main] INFO  Logger - Element is selected 
+2025-02-17 20:50:44 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:44 [main] INFO  Logger - Setting absolute path for a file
+2025-02-17 20:50:44 [main] INFO  Logger - Populating field: [[ChromeDriver: chrome on mac (2b0d94f575078ed8971ea8449167b484)] -> xpath: //*[@id="currentAddress"]] with text: Naitcho Tsanov 13S
+2025-02-17 20:50:44 [main] INFO  Logger - Field is populated
+2025-02-17 20:50:44 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:44 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:44 [main] INFO  Logger - Element is clicked 
+2025-02-17 20:50:44 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:44 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:44 [main] INFO  Logger - Element is clicked 
+2025-02-17 20:50:44 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:44 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:44 [main] INFO  Logger - Element is clicked 
+2025-02-17 20:50:44 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:44 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:44 [main] INFO  Logger - Element is clicked 
+2025-02-17 20:50:44 [main] INFO  Logger - Searching for a element by locator 
+2025-02-17 20:50:44 [main] INFO  Logger - Clicking on element 
+2025-02-17 20:50:44 [main] INFO  Logger - Element is clicked 
+2025-02-17 20:50:44 [main] INFO  Logger - Searching for a element by locator 
