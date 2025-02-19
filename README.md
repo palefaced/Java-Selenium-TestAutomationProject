@@ -24,7 +24,7 @@ zAnotherInstanceOfChromeTest Reporting
 HTML Reports: Implemented to generate detailed reports for each test run, including passed, failed, and skipped test cases.
 zAnotherInstanceOfChromeTest Cases
 
-<<<<<<< HEAD
+
 Logging and debugging: Implemented logging using Log4J2 to enhance debugging and test execution visibility. Added descriptive logging for ElementActionHelperClass, while other classes log the full stack trace only upon test failure. Detailed logs can be found in logs/test.log.
 
 TestNG Retry mechanism Integration: "Integrated TestNG Retry mechanism to enhance test stability. Failed tests are retried twice before being marked as failed."
@@ -34,11 +34,10 @@ Plans for the future:
 Focused on functional testing and ensuring comprehensive coverage of key scenarios.
 Future Enhancements
 Notifications: Email alerts for failed tests or detected bugs + screenshots, Allure report!
-=======
+
 Logging and debugging: Implemented logging using Log4J2 to enhance debugging and test execution visibility. Added descriptive logging - full stack trace upon test failure. Detailed logs can be found in logs/test.log.
 
 TestNG Retry mechanism Integration: "Integrated TestNG Retry mechanism to enhance test stability. Failed tests are retried twice before being marked as failed."
->>>>>>> 0f8623d (LOG4JINJSClasses)
 
 Plans for the future: ~100 test cases covering a 2-3-page web application. Focused on functional testing and ensuring comprehensive coverage of key scenarios. Future Enhancements Notifications: Email alerts for failed tests or detected bugs + screenshots, Allure report!
 
