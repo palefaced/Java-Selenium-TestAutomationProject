@@ -5,4 +5,7 @@ public class Constants_Test_Classes {
     public static final String chrome = "chrome";
     public static final String firefox = "firefox";
     public static final String UNSUPPORTED_BROWSER_ERROR_MSG = "Unsupported browser: ";
+
+    public static final String TEST_FAILURE_MSG = "Test failed: {} \n{}";
+
 }

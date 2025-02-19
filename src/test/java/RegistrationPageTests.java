@@ -1,10 +1,8 @@
-import Utils.models.RegistrationUser;
+import Utils.models.RegistrationPageUser;
 import Pages.RegistrationPage.RegistrationPage;
 import Utils.readers.ConfigReader;
 import Utils.readers.TestDataReader;
 import org.testng.annotations.Test;
-
-import java.sql.Driver;
 
 public class RegistrationPageTests extends BaseTestRegistrationPage {
 
@@ -13,7 +11,7 @@ public class RegistrationPageTests extends BaseTestRegistrationPage {
 
     @Test(priority = 2)
     public void RegistrationFailsWithoutFirstName() throws InterruptedException {
-        RegistrationUser user = TestDataReader.getTestData(this.testDataPathRegistrationPage, "TC001");
+        RegistrationPageUser user = TestDataReader.getTestData(this.testDataPathRegistrationPage, "TC001");
 
         this.registrationPage.navigateTo();
         this.registrationPage.fillRegistrationForm(user);
@@ -25,7 +23,7 @@ public class RegistrationPageTests extends BaseTestRegistrationPage {
 
         RegistrationPage registrationPage = new RegistrationPage(this.driver);
         String testDatPath = ConfigReader.getConfig().getTestData().getTestDataPathRegistrationPage();
-        RegistrationUser user = TestDataReader.getTestData(testDatPath, "TC002");
+        RegistrationPageUser user = TestDataReader.getTestData(testDatPath, "TC002");
 
         registrationPage.navigateTo();
         registrationPage.fillRegistrationForm(user);
@@ -35,7 +33,7 @@ public class RegistrationPageTests extends BaseTestRegistrationPage {
     @Test(priority = 3)
     public void RegistrationFailsWithoutPhoneNumber() throws InterruptedException {
 
-        RegistrationUser user = TestDataReader.getTestData(this.testDataPathRegistrationPage, "TC003");
+        RegistrationPageUser user = TestDataReader.getTestData(this.testDataPathRegistrationPage, "TC003");
 
         this.registrationPage.navigateTo();
         this.registrationPage.fillRegistrationForm(user);
@@ -45,7 +43,7 @@ public class RegistrationPageTests extends BaseTestRegistrationPage {
     @Test(priority = 3)
     public void RegistrationFailsWithoutValidPhoneNumber() throws InterruptedException {
 
-        RegistrationUser user = TestDataReader.getTestData(this.testDataPathRegistrationPage, "TC004");
+        RegistrationPageUser user = TestDataReader.getTestData(this.testDataPathRegistrationPage, "TC004");
 
         this.registrationPage.navigateTo();
         this.registrationPage.fillRegistrationForm(user);
@@ -55,7 +53,7 @@ public class RegistrationPageTests extends BaseTestRegistrationPage {
     @Test(priority = 3)
     public void RegistrationFailsWithoutValidEmail() throws InterruptedException {
 
-        RegistrationUser user = TestDataReader.getTestData(this.testDataPathRegistrationPage, "TC005");
+        RegistrationPageUser user = TestDataReader.getTestData(this.testDataPathRegistrationPage, "TC005");
 
         registrationPage.navigateTo();
         registrationPage.fillRegistrationForm(user);
@@ -65,7 +63,7 @@ public class RegistrationPageTests extends BaseTestRegistrationPage {
     @Test(priority = 3)
     public void RegistrationFailsWithoutGenderSelection() throws InterruptedException {
 
-        RegistrationUser user = TestDataReader.getTestData(this.testDataPathRegistrationPage, "TC006");
+        RegistrationPageUser user = TestDataReader.getTestData(this.testDataPathRegistrationPage, "TC006");
 
         registrationPage.navigateTo();
         registrationPage.fillRegistrationForm(user);
@@ -75,7 +73,7 @@ public class RegistrationPageTests extends BaseTestRegistrationPage {
     @Test(priority = 1)
     public void SuccessfullySubmittingFormByCheckingTheLabel() throws InterruptedException {
 
-        RegistrationUser user = TestDataReader.getTestData(this.testDataPathRegistrationPage, "TC007");
+        RegistrationPageUser user = TestDataReader.getTestData(this.testDataPathRegistrationPage, "TC007");
 
         registrationPage.navigateTo();
         registrationPage.fillRegistrationForm(user);

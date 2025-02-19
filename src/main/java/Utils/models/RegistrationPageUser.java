@@ -2,7 +2,7 @@ package Utils.models;
 
 import java.util.List;
 
-public class RegistrationUser {
+public class RegistrationPageUser {
     private String testCaseID;
     private String firstName;
     private String lastName;

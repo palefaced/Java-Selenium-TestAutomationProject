@@ -8,7 +8,7 @@
 2025-02-16 11:21:20 [main] INFO  LoggerUtils - Successfully navigated to the Home Page
 2025-02-16 11:21:21 [main] INFO  LoggerUtils - Navigating to the Registration Page
 2025-02-16 11:21:22 [main] INFO  LoggerUtils - Successfully navigate to the Registration Page
-2025-02-16 11:21:22 [main] INFO  LoggerUtils - Filling Registration form for the user:  Utils.models.RegistrationUser@4893b344
+2025-02-16 11:21:22 [main] INFO  LoggerUtils - Filling Registration form for the user:  Utils.models.RegistrationPageUser@4893b344
 2025-02-16 11:21:22 [main] INFO  LoggerUtils - Removing all frames from the page
 2025-02-16 11:21:22 [main] INFO  LoggerUtils - Populating field: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> xpath: //*[@id="firstName"]] with text: Niko
 2025-02-16 11:21:22 [main] INFO  LoggerUtils - Populating field: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> xpath: //*[@id="lastName"]] with text: Nikolov
@@ -25,7 +25,7 @@
 2025-02-16 11:21:24 [main] INFO  LoggerUtils - Clicking on element: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> xpath: //*[@id="submit"]]
 2025-02-16 11:21:24 [main] INFO  LoggerUtils - Navigating to the Registration Page
 2025-02-16 11:21:25 [main] INFO  LoggerUtils - Successfully navigate to the Registration Page
-2025-02-16 11:21:25 [main] INFO  LoggerUtils - Filling Registration form for the user:  Utils.models.RegistrationUser@6d074b14
+2025-02-16 11:21:25 [main] INFO  LoggerUtils - Filling Registration form for the user:  Utils.models.RegistrationPageUser@6d074b14
 2025-02-16 11:21:25 [main] INFO  LoggerUtils - Removing all frames from the page
 2025-02-16 11:21:25 [main] INFO  LoggerUtils - Populating field: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> xpath: //*[@id="firstName"]] with text: 
 2025-02-16 11:21:25 [main] INFO  LoggerUtils - Populating field: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> xpath: //*[@id="lastName"]] with text: Nikolov
@@ -42,7 +42,7 @@
 2025-02-16 11:21:26 [main] INFO  LoggerUtils - Clicking on element: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> xpath: //*[@id="submit"]]
 2025-02-16 11:21:26 [main] INFO  LoggerUtils - Navigating to the Registration Page
 2025-02-16 11:21:26 [main] INFO  LoggerUtils - Successfully navigate to the Registration Page
-2025-02-16 11:21:26 [main] INFO  LoggerUtils - Filling Registration form for the user:  Utils.models.RegistrationUser@51e754e1
+2025-02-16 11:21:26 [main] INFO  LoggerUtils - Filling Registration form for the user:  Utils.models.RegistrationPageUser@51e754e1
 2025-02-16 11:21:26 [main] INFO  LoggerUtils - Removing all frames from the page
 2025-02-16 11:21:26 [main] INFO  LoggerUtils - Populating field: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> xpath: //*[@id="firstName"]] with text: Niko
 2025-02-16 11:21:26 [main] INFO  LoggerUtils - Populating field: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> xpath: //*[@id="lastName"]] with text: 
@@ -59,7 +59,7 @@
 2025-02-16 11:21:27 [main] INFO  LoggerUtils - Clicking on element: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> xpath: //*[@id="submit"]]
 2025-02-16 11:21:27 [main] INFO  LoggerUtils - Navigating to the Registration Page
 2025-02-16 11:21:27 [main] INFO  LoggerUtils - Successfully navigate to the Registration Page
-2025-02-16 11:21:27 [main] INFO  LoggerUtils - Filling Registration form for the user:  Utils.models.RegistrationUser@62a6674f
+2025-02-16 11:21:27 [main] INFO  LoggerUtils - Filling Registration form for the user:  Utils.models.RegistrationPageUser@62a6674f
 2025-02-16 11:21:27 [main] INFO  LoggerUtils - Removing all frames from the page
 2025-02-16 11:21:27 [main] INFO  LoggerUtils - Populating field: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> xpath: //*[@id="firstName"]] with text: Niko
 2025-02-16 11:21:27 [main] INFO  LoggerUtils - Populating field: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> xpath: //*[@id="lastName"]] with text: Nikolov
@@ -76,7 +76,7 @@
 2025-02-16 11:21:28 [main] INFO  LoggerUtils - Clicking on element: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> xpath: //*[@id="submit"]]
 2025-02-16 11:21:28 [main] INFO  LoggerUtils - Navigating to the Registration Page
 2025-02-16 11:21:28 [main] INFO  LoggerUtils - Successfully navigate to the Registration Page
-2025-02-16 11:21:28 [main] INFO  LoggerUtils - Filling Registration form for the user:  Utils.models.RegistrationUser@5c9e8a67
+2025-02-16 11:21:28 [main] INFO  LoggerUtils - Filling Registration form for the user:  Utils.models.RegistrationPageUser@5c9e8a67
 2025-02-16 11:21:28 [main] INFO  LoggerUtils - Removing all frames from the page
 2025-02-16 11:21:28 [main] INFO  LoggerUtils - Populating field: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> xpath: //*[@id="firstName"]] with text: Niko
 2025-02-16 11:21:28 [main] INFO  LoggerUtils - Populating field: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> xpath: //*[@id="lastName"]] with text: Nikolov
@@ -93,7 +93,7 @@
 2025-02-16 11:21:29 [main] INFO  LoggerUtils - Clicking on element: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> xpath: //*[@id="submit"]]
 2025-02-16 11:21:29 [main] INFO  LoggerUtils - Navigating to the Registration Page
 2025-02-16 11:21:30 [main] INFO  LoggerUtils - Successfully navigate to the Registration Page
-2025-02-16 11:21:30 [main] INFO  LoggerUtils - Filling Registration form for the user:  Utils.models.RegistrationUser@286a4c52
+2025-02-16 11:21:30 [main] INFO  LoggerUtils - Filling Registration form for the user:  Utils.models.RegistrationPageUser@286a4c52
 2025-02-16 11:21:30 [main] INFO  LoggerUtils - Removing all frames from the page
 2025-02-16 11:21:30 [main] INFO  LoggerUtils - Populating field: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> xpath: //*[@id="firstName"]] with text: Niko
 2025-02-16 11:21:30 [main] INFO  LoggerUtils - Populating field: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> xpath: //*[@id="lastName"]] with text: Nikolov
@@ -110,7 +110,7 @@
 2025-02-16 11:21:31 [main] INFO  LoggerUtils - Clicking on element: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> xpath: //*[@id="submit"]]
 2025-02-16 11:21:31 [main] INFO  LoggerUtils - Navigating to the Registration Page
 2025-02-16 11:21:31 [main] INFO  LoggerUtils - Successfully navigate to the Registration Page
-2025-02-16 11:21:31 [main] INFO  LoggerUtils - Filling Registration form for the user:  Utils.models.RegistrationUser@4bbc02ef
+2025-02-16 11:21:31 [main] INFO  LoggerUtils - Filling Registration form for the user:  Utils.models.RegistrationPageUser@4bbc02ef
 2025-02-16 11:21:31 [main] INFO  LoggerUtils - Removing all frames from the page
 2025-02-16 11:21:31 [main] INFO  LoggerUtils - Populating field: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> xpath: //*[@id="firstName"]] with text: Niko
 2025-02-16 11:21:31 [main] INFO  LoggerUtils - Populating field: [[ChromeDriver: chrome on mac (e6ad3e7b51bb0457c88c82182526df2d)] -> xpath: //*[@id="lastName"]] with text: Nikolov

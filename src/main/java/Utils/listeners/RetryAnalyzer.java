@@ -1,7 +1,7 @@
 package Utils.listeners;
 
 import Utils.constants.Constants_Listeners;
-import Utils.loggers.LoggerUtils;
+import Utils.loggers.Logger;
 import org.testng.IRetryAnalyzer;
 import org.testng.ITestResult;
 
@@ -15,7 +15,7 @@ public class RetryAnalyzer implements IRetryAnalyzer {
     public boolean retry(ITestResult iTestResult) {
         if (retryCount < maxRetryCount) {
             retryCount++;
-            LoggerUtils.log.info(Constants_Listeners.RETRY_TEST_MSG, iTestResult.getName(), retryCount);
+            Logger.log.info(Constants_Listeners.RETRY_TEST_MSG, iTestResult.getName(), retryCount);
             //System.out.println("Retrying test: " + iTestResult.getName() + " Attempt " + retryCount + " failed !");
             return true;
         }

@@ -1,10 +1,8 @@
 package Pages.RegistrationPage;
 
-import Utils.constants.Constants_Element_Action_Helper;
 import Utils.helpers.ElementActionsHelper;
-import Utils.loggers.LoggerUtils;
+import Utils.models.RegistrationPageUser;
 import Utils.readers.ConfigReader;
-import Utils.models.RegistrationUser;
 import Pages.BasePage;
 import Utils.constants.Constants_Registration_Page;
 import Utils.scripts.JS_Scripts;
@@ -44,7 +42,7 @@ public class RegistrationPage extends BasePage {
         JS_Scripts.scrollElementInToView(Driver(), element);
     }
 
-    public void fillRegistrationForm(RegistrationUser user) throws InterruptedException {
+    public void fillRegistrationForm(RegistrationPageUser user) throws InterruptedException {
         removeFramesFromPage();
 
         populateField(elements().firstName(), user.getFirstName());

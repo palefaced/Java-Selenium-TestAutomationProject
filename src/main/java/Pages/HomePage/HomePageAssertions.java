@@ -21,8 +21,5 @@ public class HomePageAssertions extends BasePage {
     public void assertIfJoinNowButtonIsAvailable(){
         //explicitly fails to trigger RetryListenerClass
         Assert.assertFalse(elements().JoinNowButton().isDisplayed());
-
     }
-
-
 }
