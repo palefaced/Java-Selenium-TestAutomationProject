@@ -28,6 +28,7 @@ public class ElementActionsHelper {
         try {
             driver.get(url);
         } catch (Exception e) {
+            LoggerUtils.log.error(Constants_Element_Action_Helper.FAILED_TO_NAVIGATE_MSG + e.getMessage());
             throw new RuntimeException(e);
         }
     }
@@ -118,7 +119,8 @@ public class ElementActionsHelper {
             File file = new File(path);
             return file.getAbsolutePath();
         } catch (Exception e) {
-            throw new RuntimeException(Constants_Element_Action_Helper.PATH_NOT_FOUND_MSG + path);
+            LoggerUtils.log.error(Constants_Element_Action_Helper.PATH_NOT_FOUND_MSG + path);
+            throw new RuntimeException(e);
         }
     }
 
