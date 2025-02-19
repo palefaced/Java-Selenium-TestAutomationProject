@@ -634,3 +634,57 @@
 2025-02-17 20:50:44 [main] INFO  Logger - Clicking on element 
 2025-02-17 20:50:44 [main] INFO  Logger - Element is clicked 
 2025-02-17 20:50:44 [main] INFO  Logger - Searching for a element by locator 
+2025-02-18 19:21:59 [main] INFO  Logger - Navigating to the Web Page https://demoqa.com/automation-practice-form
+2025-02-18 19:49:30 [main] INFO  Logger - Navigating to the Web Page https://demoqa.com/
+2025-02-18 19:50:45 [main] INFO  Logger - Navigating to the Web Page https://demoqa.com/
+2025-02-18 20:02:01 [main] INFO  Utils - [TestNG] Running:
+  /Users/niko/Library/Caches/JetBrains/IdeaIC2023.3/temp-testng-customsuite.xml
+
+2025-02-18 20:02:02 [main] INFO  LoggerUtils - Navigating to the Web Page https://demoqa.com/
+2025-02-18 20:02:14 [main] INFO  Utils - [TestNG] Running:
+  /Users/niko/Library/Caches/JetBrains/IdeaIC2023.3/temp-testng-customsuite.xml
+
+2025-02-18 20:04:32 [main] ERROR LoggerUtils - Failed to navigate to the URL: unknown error: net::ERR_CONNECTION_TIMED_OUT
+  (Session info: chrome=133.0.6943.98)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.6.3', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f8f984eb32fa10f73ff08178ee3b7a21, get {url=https://demoqa.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.98, chrome: {chromedriverVersion: 133.0.6943.98 (da53563ceb66..., userDataDir: /var/folders/9c/s_l6jyp11qg...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:9222}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f8f984eb32fa10f73ff08178ee3b7a21
+2025-02-18 20:33:43 [main] INFO  Utils - [TestNG] Running:
+  /Users/niko/Library/Caches/JetBrains/IdeaIC2023.3/temp-testng-customsuite.xml
+
+2025-02-18 20:33:49 [main] INFO  LoggerUtils - Navigating to the Web Page https://demoqa.com/
+2025-02-18 20:34:20 [main] INFO  Utils - [TestNG] Running:
+  /Users/niko/Library/Caches/JetBrains/IdeaIC2023.3/temp-testng-customsuite.xml
+
+2025-02-18 20:34:41 [main] INFO  Utils - [TestNG] Running:
+  /Users/niko/Library/Caches/JetBrains/IdeaIC2023.3/temp-testng-customsuite.xml
+
+2025-02-18 20:35:04 [main] INFO  LoggerUtils - Navigating to the Web Page https://demoqa.com/
+2025-02-18 20:35:19 [main] INFO  Utils - [TestNG] Running:
+  /Users/niko/Library/Caches/JetBrains/IdeaIC2023.3/temp-testng-customsuite.xml
+
+2025-02-19 14:45:14 [main] INFO  Utils - [TestNG] Running:
+  /Users/niko/Library/Caches/JetBrains/IdeaIC2023.3/temp-testng-customsuite.xml
+
+2025-02-19 14:51:28 [main] INFO  Utils - [TestNG] Running:
+  /Users/niko/Library/Caches/JetBrains/IdeaIC2023.3/temp-testng-customsuite.xml
+
+2025-02-19 15:05:56 [main] INFO  Utils - [TestNG] Running:
+  /Users/niko/Library/Caches/JetBrains/IdeaIC2023.3/temp-testng-customsuite.xml
+
+2025-02-19 15:06:58 [main] INFO  Utils - [TestNG] Running:
+  /Users/niko/Library/Caches/JetBrains/IdeaIC2023.3/temp-testng-customsuite.xml
+
+2025-02-19 15:07:14 [main] INFO  LoggerUtils - Searching for a element by locator 
+2025-02-19 15:07:14 [main] ERROR LoggerUtils - Element not found: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="app"]/header/a/img"}
+  (Session info: chrome=133.0.6943.98)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.6.3', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bc152ca7ca50fc1326341e31b17e2294, findElement {using=xpath, value=//*[@id="app"]/header/a/img}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.98, chrome: {chromedriverVersion: 133.0.6943.98 (da53563ceb66..., userDataDir: /var/folders/9c/s_l6jyp11qg...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:9222}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:9222/devtool..., se:cdpVersion: 133.0.6943.98, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bc152ca7ca50fc1326341e31b17e2294

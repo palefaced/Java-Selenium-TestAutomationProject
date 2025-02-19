@@ -2,7 +2,7 @@ package Pages.RegistrationPage;
 
 import Utils.constants.Constants_Element_Action_Helper;
 import Utils.helpers.ElementActionsHelper;
-import Utils.loggers.Logger;
+import Utils.loggers.LoggerUtils;
 import Utils.readers.ConfigReader;
 import Utils.models.RegistrationUser;
 import Pages.BasePage;
@@ -45,7 +45,6 @@ public class RegistrationPage extends BasePage {
     }
 
     public void fillRegistrationForm(RegistrationUser user) throws InterruptedException {
-        Logger.log.info(Constants_Element_Action_Helper.FILLING_REGISTRATION_FORM);
         removeFramesFromPage();
 
         populateField(elements().firstName(), user.getFirstName());

@@ -4,6 +4,8 @@ import Utils.readers.ConfigReader;
 import Utils.readers.TestDataReader;
 import org.testng.annotations.Test;
 
+import java.sql.Driver;
+
 public class RegistrationPageTests extends BaseTestRegistrationPage {
 
     //Two ways if preparing the actual tests: using BaseTest class and BaseTest/forAnyPage/Class//
@@ -78,5 +80,11 @@ public class RegistrationPageTests extends BaseTestRegistrationPage {
         registrationPage.navigateTo();
         registrationPage.fillRegistrationForm(user);
         registrationPage.assertions().AssertFormIsSuccessfullySubmittedByLabel();
+    }
+
+
+    @Test(priority = 3)
+    public void TEST(){
+        driver.get("abv.bg");
     }
 }
