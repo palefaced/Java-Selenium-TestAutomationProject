@@ -1,8 +1,11 @@
+package Utils.base;
+
 import Pages.RegistrationPage.RegistrationPage;
+import Utils.base.BaseTest;
 import Utils.readers.ConfigReader;
 import org.testng.annotations.BeforeClass;
 
-public class BaseTestRegistrationPage extends BaseTest{
+public class BaseTestRegistrationPage extends BaseTest {
     protected String testDataPathRegistrationPage;
     protected RegistrationPage registrationPage;
 

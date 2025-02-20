@@ -1,3 +1,4 @@
+import Utils.base.BaseTestRegistrationPage;
 import Utils.models.RegistrationPageUser;
 import Pages.RegistrationPage.RegistrationPage;
 import Utils.readers.ConfigReader;
@@ -6,8 +7,8 @@ import org.testng.annotations.Test;
 
 public class RegistrationPageTests extends BaseTestRegistrationPage {
 
-    //Two ways if preparing the actual tests: using BaseTest class and BaseTest/forAnyPage/Class//
-    //BaseTestRegistrationPage is handling the path to the config file and the creation of the reg page//
+    //Two ways if preparing the actual tests: using Utils.base.BaseTest class and Utils.base.BaseTest/forAnyPage/Class//
+    //Utils.base.BaseTestRegistrationPage is handling the path to the config file and the creation of the reg page//
 
     @Test(priority = 2)
     public void RegistrationFailsWithoutFirstName() throws InterruptedException {
