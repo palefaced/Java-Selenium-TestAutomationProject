@@ -8,6 +8,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
+
 import java.io.File;
 import java.io.IOException;
 
@@ -24,6 +25,13 @@ public class ScreenShotUtils {
             String screenshotPath = "screenshots/" + testName + ".png";
             String logFilePath = "logs/" + testName + ".log";
 
+
+            //Deletes old screenshot if exists
+            File screenshotFile = new File(screenshotPath);
+            if (screenshotFile.exists() && screenshotFile.delete()) {
+                Logger.log.info("Deleted old screenshot: {}", screenshotPath);
+            }
+
             // then Convert WebDriver to TakesScreenshot object to ONLY capture an image with getScreenshotAt method
             File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
             try {
@@ -33,8 +41,13 @@ public class ScreenShotUtils {
                 Logger.log.error("Failed to save screenshot: ", e);
             }
 
-            // then we Save Logs for this test
+            //Delete old logs if file exists
             File logFile = new File(logFilePath);
+            if (logFile.exists() && logFile.delete()) {
+                Logger.log.info("Deleted old log file: {}", logFilePath);
+            }
+
+            // then we Save Logs for this test
             try {
                 FileUtils.writeStringToFile(logFile, "Test Failure Log: " + testName + "\n" + result.getThrowable(), "UTF-8");
                 Logger.log.error("Logs saved at {}", logFilePath);
