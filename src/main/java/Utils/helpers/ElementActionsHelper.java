@@ -28,7 +28,7 @@ public class ElementActionsHelper {
         try {
             driver.get(url);
         } catch (Exception e) {
-            Logger.log.error(Constants_Element_Action_Helper.FAILED_TO_NAVIGATE_MSG + e.getMessage());
+            Logger.log.error(Constants_Element_Action_Helper.FAILED_TO_NAVIGATE_MSG);
             throw new RuntimeException(e);
         }
     }

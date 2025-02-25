@@ -1,6 +1,6 @@
 {
   "environment": {
-    "baseUrl": "https://www.demoqa.com/",
+    "baseUrl": "https://demoqa.com",
     "browser": "chrome",
     "headless": true,
     "arguments": [

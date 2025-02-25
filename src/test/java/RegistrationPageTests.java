@@ -80,10 +80,4 @@ public class RegistrationPageTests extends BaseTestRegistrationPage {
         registrationPage.fillRegistrationForm(user);
         registrationPage.assertions().AssertFormIsSuccessfullySubmittedByLabel();
     }
-
-
-    @Test(priority = 3)
-    public void TEST(){
-        driver.get("abv.bg");
-    }
 }

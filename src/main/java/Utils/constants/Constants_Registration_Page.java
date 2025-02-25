@@ -2,7 +2,7 @@ package Utils.constants;
 
 public class Constants_Registration_Page {
     //Page Titles
-    public static final String REGISTRATION_PAGE_TITLE = "automation-practice-form";
+    public static final String REGISTRATION_PAGE_TITLE = "/automation-practice-form";
 
 
     //Common Strings in Registration Page

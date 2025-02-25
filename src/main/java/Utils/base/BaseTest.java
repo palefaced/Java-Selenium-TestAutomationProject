@@ -23,7 +23,6 @@ public class BaseTest {
 
     @BeforeClass
     public void setUp() {
-
         String browser = ConfigReader.getConfig().getEnvironment().getBrowser();
         Boolean headless = ConfigReader.getConfig().getEnvironment().getHeadless();
 
@@ -38,8 +37,9 @@ public class BaseTest {
         }
         driver.manage().window().maximize();
 
+
         //Initialize screenShotUtils
-        screenShotUtils = new ScreenShotUtils(driver);
+        this.screenShotUtils = new ScreenShotUtils(driver);
     }
 
     private void initializeChromeDriver(Boolean headless) {
@@ -55,14 +55,15 @@ public class BaseTest {
 
     @AfterMethod
     public void logFailures(ITestResult result) {
-        if (result.getStatus() == ITestResult.FAILURE){
-            Logger.log.error(Constants_Test_Classes.TEST_FAILURE_MSG, result.getName(), result.getThrowable());
+        if (result.getStatus() == ITestResult.FAILURE) {
+            Logger.log.error(Constants_Test_Classes.TEST_FAILURE_MSG, result.getName());
+            Logger.log.error(Constants_Test_Classes.RESULT_OF_THE_FAILED_TEST, result.getThrowable());
         }
         screenShotUtils.captureFailureDetails(result);
     }
 
     @AfterClass
-    public void tearDown(){
+    public void tearDown() {
         if (this.driver != null) {
             this.driver.quit();
         }

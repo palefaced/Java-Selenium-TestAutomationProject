@@ -24,19 +24,18 @@ public class ScreenShotUtils {
             String testName = result.getName();
             String screenshotPath = "screenshots/" + testName + ".png";
             String logFilePath = "logs/" + testName + ".log";
-
-
+            
             //Deletes old screenshot if exists
             File screenshotFile = new File(screenshotPath);
             if (screenshotFile.exists() && screenshotFile.delete()) {
-                Logger.log.info("Deleted old screenshot: {}", screenshotPath);
+                Logger.log.info("Deleted old screenshot for the failed test: {}", screenshotPath);
             }
 
             // then Convert WebDriver to TakesScreenshot object to ONLY capture an image with getScreenshotAt method
             File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
             try {
                 FileUtils.copyFile(screenshot, new File(screenshotPath));
-                Logger.log.error("Test Failed: {} - Screenshot saved at {}", testName, screenshotPath);
+                Logger.log.error("New screenshot saved at {}", testName, screenshotPath);
             } catch (IOException e) {
                 Logger.log.error("Failed to save screenshot: ", e);
             }

@@ -1,0 +1,2 @@
+Test Failure Log: VerifyHomePageJoinButtonIsPresented
+java.lang.AssertionError: expected [false] but found [true]
