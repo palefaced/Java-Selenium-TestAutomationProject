@@ -3,6 +3,7 @@ package Utils.base;
 import Utils.constants.Constants_Test_Classes;
 import Utils.loggers.Logger;
 import Utils.readers.ConfigReader;
+import Utils.testutils.EmailUtils;
 import Utils.testutils.ScreenShotUtils;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
@@ -37,7 +38,6 @@ public class BaseTest {
         }
         driver.manage().window().maximize();
 
-
         //Initialize screenShotUtils
         this.screenShotUtils = new ScreenShotUtils(driver);
     }
@@ -54,12 +54,26 @@ public class BaseTest {
     }
 
     @AfterMethod
-    public void logFailures(ITestResult result) {
+    public void logFailuresAndSendEmails(ITestResult result) {
         if (result.getStatus() == ITestResult.FAILURE) {
             Logger.log.error(Constants_Test_Classes.TEST_FAILURE_MSG, result.getName());
             Logger.log.error(Constants_Test_Classes.RESULT_OF_THE_FAILED_TEST, result.getThrowable());
         }
+        //Capture screenshot
         screenShotUtils.captureFailureDetails(result);
+
+        //Get its path to be able to send it in an email
+        String screenshotPath = screenShotUtils.getCurrentScreenshotPath();
+//        if (screenshotPath != null) {
+//            Logger.log.info("Screenshot saved at: " + screenshotPath);
+//            String errorMessage = result.getThrowable() != null ? result.getThrowable().toString() : "Test failed without an exception.";
+//            EmailUtils.sendEmail(result.getName(), errorMessage, screenshotPath);
+//        } else {
+//            Logger.log.error("Screenshot path is null, skipping email sending.");
+//        }
+        String errorMessage = result.getThrowable() != null ? result.getThrowable().toString() : "Test failed without an exception.";
+        EmailUtils.sendEmail(result.getName(), errorMessage, screenshotPath);
+
     }
 
     @AfterClass
