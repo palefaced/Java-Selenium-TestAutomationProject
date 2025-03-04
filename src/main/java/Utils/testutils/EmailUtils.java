@@ -1,5 +1,6 @@
 package Utils.testutils;
 
+import Utils.loggers.Logger;
 import jakarta.mail.Message;
 import jakarta.mail.Multipart;
 import jakarta.mail.Session;
@@ -53,7 +54,7 @@ public class EmailUtils {
             message.setContent(multipart);
 
             Transport.send(message);
-            System.out.println("Failure email sent!");
+            Logger.log.info("Failure email sent!");
 
         } catch (Exception e) {
             e.printStackTrace();

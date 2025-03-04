@@ -1,5 +1,6 @@
 package Utils.base;
 
+import Utils.constants.Constants_EmailUtils;
 import Utils.constants.Constants_Test_Classes;
 import Utils.loggers.Logger;
 import Utils.readers.ConfigReader;
@@ -54,24 +55,25 @@ public class BaseTest {
     }
 
     @AfterMethod
-    public void logFailuresAndSendEmails(ITestResult result) {
+    public void logFailures(ITestResult result) {
         if (result.getStatus() == ITestResult.FAILURE) {
             Logger.log.error(Constants_Test_Classes.TEST_FAILURE_MSG, result.getName());
             Logger.log.error(Constants_Test_Classes.RESULT_OF_THE_FAILED_TEST, result.getThrowable());
         }
         //Capture screenshot
         screenShotUtils.captureFailureDetails(result);
+    }
 
-        //Get its path to be able to send it in an email
-        String screenshotPath = screenShotUtils.getCurrentScreenshotPath();
-        if (screenshotPath != null) {
-            Logger.log.info("Screenshot saved at: " + screenshotPath);
-            String errorMessage = result.getThrowable() != null ? result.getThrowable().toString() : "Test failed without an exception.";
-            EmailUtils.sendEmail(result.getName(), errorMessage, screenshotPath);
-//        } else {
-//            Logger.log.error("Screenshot path is null, skipping email sending.");
+    @AfterMethod
+    public void sendMailUponTestFailure(ITestResult result) {
+        if (result.getStatus() == ITestResult.FAILURE){
+
+            String screenshotPath = screenShotUtils.getCurrentScreenshotPath();
+            if (screenshotPath != null) {
+                String errorMessage = result.getThrowable() != null ? result.getThrowable().toString() : Constants_EmailUtils.NO_THROWABLE_ERROR_MSG;
+                EmailUtils.sendEmail(result.getName(), errorMessage, screenshotPath);
+            }
         }
-
     }
 
     @AfterClass
