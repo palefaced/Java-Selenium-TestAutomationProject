@@ -4,6 +4,7 @@ public class AppConfig {
     private EnvironmentConfig environment;
     private TimeoutsConfig timeouts;
     private TestDataConfig testData;
+    private EmailConfig emailConfig;
 
     public EnvironmentConfig getEnvironment(){
         return this.environment;
@@ -27,5 +28,13 @@ public class AppConfig {
 
     public void setTestData(TestDataConfig testData) {
         this.testData = testData;
+    }
+
+    public EmailConfig getEmailConfig() {
+        return emailConfig;
+    }
+
+    public void setEmailConfig(EmailConfig emailConfig) {
+        this.emailConfig = emailConfig;
     }
 }

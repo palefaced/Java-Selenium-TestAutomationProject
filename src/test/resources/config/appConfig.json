@@ -17,5 +17,11 @@
   },
   "testData": {
     "testDataPathRegistrationPage": "src/test/resources/config/registrationPageTestData.json"
+  },
+  "emailConfig": {
+    "auth": "true",
+    "starttlsEnable": "true",
+    "host": "smtp.gmail.com",
+    "port": "587"
   }
 }
