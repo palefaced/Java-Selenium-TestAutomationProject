@@ -64,15 +64,13 @@ public class BaseTest {
 
         //Get its path to be able to send it in an email
         String screenshotPath = screenShotUtils.getCurrentScreenshotPath();
-//        if (screenshotPath != null) {
-//            Logger.log.info("Screenshot saved at: " + screenshotPath);
-//            String errorMessage = result.getThrowable() != null ? result.getThrowable().toString() : "Test failed without an exception.";
-//            EmailUtils.sendEmail(result.getName(), errorMessage, screenshotPath);
+        if (screenshotPath != null) {
+            Logger.log.info("Screenshot saved at: " + screenshotPath);
+            String errorMessage = result.getThrowable() != null ? result.getThrowable().toString() : "Test failed without an exception.";
+            EmailUtils.sendEmail(result.getName(), errorMessage, screenshotPath);
 //        } else {
 //            Logger.log.error("Screenshot path is null, skipping email sending.");
-//        }
-        String errorMessage = result.getThrowable() != null ? result.getThrowable().toString() : "Test failed without an exception.";
-        EmailUtils.sendEmail(result.getName(), errorMessage, screenshotPath);
+        }
 
     }
 
