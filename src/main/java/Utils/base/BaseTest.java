@@ -7,6 +7,7 @@ import Utils.readers.ConfigReader;
 import Utils.testutils.EmailUtils;
 import Utils.testutils.ScreenShotUtils;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import io.qameta.allure.Allure;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -59,9 +60,12 @@ public class BaseTest {
         if (result.getStatus() == ITestResult.FAILURE) {
             Logger.log.error(Constants_Test_Classes.TEST_FAILURE_MSG, result.getName());
             Logger.log.error(Constants_Test_Classes.RESULT_OF_THE_FAILED_TEST, result.getThrowable());
+
+            Allure.addAttachment("Failure Reason", result.getThrowable().toString());
         }
         //Capture screenshot
         screenShotUtils.captureFailureDetails(result);
+
     }
 
     @AfterMethod
