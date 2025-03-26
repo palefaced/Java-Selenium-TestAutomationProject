@@ -2,7 +2,7 @@
   "environment": {
     "baseUrl": "https://demoqa.com",
     "browser": "chrome",
-    "headless": false,
+    "headless": true,
     "arguments": [
       "--headless",
       "--disable-gpu",

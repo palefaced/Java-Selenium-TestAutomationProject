@@ -1,7 +1,6 @@
-package Utils.testutils;
+package Utils.reportingutils;
 
 import Utils.constants.Constants_ScreenShotUtils;
-import Utils.constants.Constants_Test_Classes;
 import Utils.loggers.Logger;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;

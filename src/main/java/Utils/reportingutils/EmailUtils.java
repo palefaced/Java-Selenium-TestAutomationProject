@@ -1,4 +1,4 @@
-package Utils.testutils;
+package Utils.reportingutils;
 
 import Utils.constants.Constants_EmailUtils;
 import Utils.loggers.Logger;
