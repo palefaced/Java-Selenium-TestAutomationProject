@@ -1,5 +1,6 @@
 package Utils.base;
 
+import Utils.constants.Constants_Allure;
 import Utils.constants.Constants_EmailUtils;
 import Utils.constants.Constants_Test_Classes;
 import Utils.loggers.Logger;
@@ -61,11 +62,10 @@ public class BaseTest {
             Logger.log.error(Constants_Test_Classes.TEST_FAILURE_MSG, result.getName());
             Logger.log.error(Constants_Test_Classes.RESULT_OF_THE_FAILED_TEST, result.getThrowable());
 
-            Allure.addAttachment("Failure Reason", result.getThrowable().toString());
+            Allure.addAttachment(Constants_Allure.FAILURE_REASON, result.getThrowable().toString());
         }
         //Capture screenshot
         screenShotUtils.captureFailureDetails(result);
-
     }
 
     @AfterMethod
