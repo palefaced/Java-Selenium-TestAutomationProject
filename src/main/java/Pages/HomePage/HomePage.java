@@ -10,7 +10,6 @@ public class HomePage extends BasePage {
     public HomePage(WebDriver driver) {
         super(driver);
     }
-
     protected HomePageElements elements() {
         return new HomePageElements(Driver());
     }

@@ -1,5 +1,5 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
-<suite name="DemoQATestSuite">
+<suite name="LoginPage_And_RegPage_Tests">
     <listeners>
         <listener class-name="Utils.listeners.RetryListener"/>
     </listeners>

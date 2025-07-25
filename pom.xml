@@ -107,6 +107,11 @@
 
                     <!-- Output directory for TestNG results -->
                     <reportsDirectory>${project.build.directory}/test-output</reportsDirectory>
+
+                    <!-- 🧩 Add this block for Allure results -->
+                    <systemPropertyVariables>
+                        <allure.results.directory>${project.build.directory}/allure-results</allure.results.directory>
+                    </systemPropertyVariables>
                 </configuration>
             </plugin>
 
