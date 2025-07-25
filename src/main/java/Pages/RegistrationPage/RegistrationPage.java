@@ -49,6 +49,7 @@ public class RegistrationPage extends BasePage {
         populateField(elements().lastName(), user.getLastName());
         populateField(elements().eMail(), user.getEmail());
         selectFromMultipleOptions(elements().genders(), user.getGenders());
+        removeFramesFromPage();
         populateField(elements().mobilePhone(), user.getPhoneNumber());
 
         scrollTheElementInToVIew(elements().calendarButton());
