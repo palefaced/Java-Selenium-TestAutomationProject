@@ -9,17 +9,25 @@ import org.openqa.selenium.WebElement;
 public class JS_Scripts {
     public static void removeAllFrames(WebDriver driver) {
         JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript(Constants_JS.REMOVE_ALL_FRAMES_SCRIPT);
+
         for (int i = 0; i < 3; i++) { // Retry logic
-            Long frameCount = (Long) js.executeScript(Constants_JS.COUNT_FRAMES_SCRIPT);
-            if (frameCount == 0) break;
             try {
+                Long frameCount = (Long) js.executeScript(Constants_JS.COUNT_FRAMES_SCRIPT);
+
+                if (frameCount == 0 || frameCount == null)
+                    break;
+
+                js.executeScript(Constants_JS.REMOVE_ALL_FRAMES_SCRIPT);
                 Thread.sleep(500); // Allow any dynamic frames to load
             } catch (InterruptedException e) {
                 Logger.log.error(Constants_JS.INTERRUPTED_EXCEPTION, e);
+                Thread.currentThread().interrupt();
                 throw new RuntimeException(e);
             }
-            js.executeScript(Constants_JS.REMOVE_ALL_FRAMES_SCRIPT);
+            catch (Exception e){
+                Logger.log.error(Constants_JS.FAILED_TO_REMOVE_FRAMES, e);
+                throw new RuntimeException(e);
+            }
         }
     }
 

@@ -6,7 +6,7 @@ public class Constants_JS {
 
     // Script to remove all frames from the page
     public static final String REMOVE_ALL_FRAMES_SCRIPT =
-            "document.querySelectorAll('iframe, frame').forEach(frame => frame.remove());";
+            "document.querySelectorAll('iframe').forEach(f => f.remove()); return document.querySelectorAll('iframe').length;";
 
     // Script to count the number of frames on the page
     public static final String COUNT_FRAMES_SCRIPT =
@@ -29,5 +29,6 @@ public class Constants_JS {
     public static final String SCROLLING_ELEMENT_INTO_VIEW = "Scrolling element into view: {}";
     public static final String SUCCESSFULLY_SCROLLED_ELEMENT_INTO_VIEW = "Successfully scrolled element into view";
     public static final String FAILED_TO_SCROLL_ELEMENT_INTO_VIEW = "Failed to scroll element into view: ";
+    public static final String FAILED_TO_REMOVE_FRAMES = "Error removing iframes: ";
 
 }
